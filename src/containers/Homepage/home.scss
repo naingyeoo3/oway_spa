@@ -1,0 +1,150 @@
+@import '../../styles/main.scss';
+
+.mobile-home {
+    .top-image {
+        &::before {
+            position: absolute;
+            content: '';
+            display: block;
+            width: 100%;
+            height: 20px;
+            background: rgb(0,0,0);
+            background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0, 0, 0, 0.25) 100%);
+        }
+        .small {
+            display: none;
+        }
+    }
+    .mobile-menu {
+        border-radius: 35px 35px 0 0;
+        background: #FFFFFF;
+        display: block;
+        padding: 25px 10px 10px;
+        box-shadow: 0px -6px 11px rgba(0, 0, 0, 0.14);
+        position: relative;
+        top: -30px;
+        margin-bottom: -30px;
+        h2 {
+            font-size: $font-size-18;
+            font-weight: $font-weight-600;
+            color: #4D4D4D;
+            text-align: $text-center;
+            padding-bottom: 22px;
+            font-family: $font-lato;
+        }
+        ul {
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            li {
+                width: 25%;
+                a {
+                    p {
+                        position: relative;
+                        width: 25%;
+                        margin: 0 auto;
+                        img {
+                            width: 100%;
+                        }
+                        .new {
+                            background: #FAA534;
+                            width: 10px;
+                            height: 10px;
+                            border-radius: 50%;
+                            display: block;
+                            position: absolute;
+                            right: -10px;
+                            top: 0;
+                        }
+                    }
+                    h5 {
+                        text-align: $text-center;
+                        font-size: $font-size-14;
+                        color: #4D4D4D;
+                        font-weight: $font-weight-600;
+                        margin-bottom: 12px;                       
+                    }
+                }
+            }
+        }    
+    }
+    .mobile-carousel {
+        border-top: 1px dashed #C5C5C5; 
+        padding-top: 20px; 
+        .ongoing-promo {
+            margin: 0 0 20px;
+            padding: 0;
+            border: none;
+            background: inherit;
+        }
+        .header-title {
+            letter-spacing: 0;
+            text-align: $text-left;
+            margin-bottom: 0;
+            font-size: $font-size-18;
+            small {
+                font-size: 11px;
+                margin-bottom: 12px;            
+            }
+        }
+    }
+    .member-block {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;        
+        margin: 0 15px 20px;
+        border-radius: 10px;
+        padding: 15px;
+        background: #FFFFFF;
+        box-shadow: 0 0 13px rgba(0,0,0,0.16);
+        img {
+            margin-right: 15px;
+        }
+        p {
+            color: #0A56BB;
+            font-size: 15px;
+            font-weight: 600;
+            margin-right: 15px;
+            font-family: $font-lato;
+            span {
+                color: #828282;
+                font-size: 13px;
+                display: block;
+            }
+        }
+        .arrow {
+            position: absolute;
+            right: 15px;
+        }
+    } 
+}
+
+@media screen and (max-width: 767px) {
+    .mobile-home {
+        .top-image {
+            .small {
+                display: block;
+            }
+            .big {
+                display: none;
+            }
+        }
+        .mobile-menu {
+            ul {
+                li {                    
+                    a {
+                        p {
+                            width: 40%;
+                        }
+                        h5 {
+                            font-size: $font-size-13;
+                            &.myanmar {
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

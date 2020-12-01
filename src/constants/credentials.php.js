@@ -1,0 +1,10 @@
+export const API_URL = "https://ai.owaytrip.com";
+export const FLIGHTS_API_URL = "https://38jjoekecg.execute-api.ap-southeast-1.amazonaws.com/api/cities/search";
+export const BUS_API_URL = "https://devtestapi.owaytrip.com/hotel/v2/search";
+export const API_KEY = "Kpp69BQ8ihwwLsPwSEexjqKAbf+fSSbQ/qlz9Nuy/O0=";
+export const DEV_URL = `${window.location.origin}`;
+export const HOTEL_API_URL = "https://devtestapi.owaytrip.com/";
+export const HOTEL_API_KEY = "oR3Khan7h1UOjafFCpzdgnNKX5/WyQa1sgzDYNXd0ak=";
+export const ENV_URL = "https://development.owaytrip.com";
+export const SUBSCRIBE_API_URL = "https://devtestai.owaytrip.com/email-subscribe/store";
+export const SUBSCRIBE_API_KEY = "YL/7P6Cp3y043q6pciOhPOUvnR+npllo2QqpHE+Bc7o=";

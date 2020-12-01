@@ -1,0 +1,44 @@
+@import '../../styles/main.scss';
+
+.owayride-search {
+    text-align: $text-center;
+    padding: 15px;
+    img {
+        max-width: 100%;
+        margin-bottom: 10px;
+        &.mobile {
+            display: $display-none;
+        }
+    }
+    .owayride-btn {
+        border-top: 1px solid #DFDFDF;
+        margin: 0 -15px;
+        button {
+            margin-top: 15px;
+        }        
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .owayride-search {
+        padding: 10px 0 0;
+        .sub-owayride-search {
+            background: $white-color;            
+            border-radius: $border-radius-10;
+            padding: 10px 15px;
+            box-shadow: 0px 1px 15px 0px rgba(0, 0, 0, 0.31);
+            img {            
+                &.mobile {
+                    display: $display-inline-block;
+                }
+                &.web {
+                    display: $display-none;
+                }
+            }
+            .owayride-btn {
+                border-top: $border-top-none;
+                padding-bottom: 15px;
+            }
+        }        
+    }
+}

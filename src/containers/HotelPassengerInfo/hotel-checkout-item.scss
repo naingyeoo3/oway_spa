@@ -1,0 +1,134 @@
+@import '../../styles/main.scss';
+
+.listing-container {
+    &.hotel-checkout-container {
+        .card {
+            cursor: inherit;
+            &:hover,
+            &:focus,
+            &:active {
+                box-shadow: $none;
+            }
+        }
+        .listing-item {
+            border-radius: $zero;
+            .col-image {
+                img {
+                    border-radius: 5px 0 0 0;
+                }
+            }
+            .col-info {
+                .location {
+                    margin: $zero;
+                    display: $display-flex;
+                    align-items: $align-items-start;
+                    span {
+                        display: $display-block;
+                        margin-top: -5px;
+                    }
+                }
+                .include-features {
+                    margin-top: 45px;
+                }
+            }
+        }
+        .stay-period {
+            display: $display-flex;
+            justify-content: $justify-content-between;
+            background: #F5F9FF;
+            border: 1px solid $border-light-color;
+            border-radius: 5px;
+            margin: 10px;
+            div {
+                flex: $flex-1;
+                font-size: $font-size-13;
+                font-weight: $font-weight;
+                color: #606060;
+                border-right: 1px solid $border-light-color;
+                padding: 7px;
+                .date {
+                    color: #333333;
+                    font-size: $font-size-15;
+                }
+                &:last-child {
+                    border-right: $none;
+                }
+            }
+        }
+        .hotel-room {
+            padding: 10px;
+            border-top: 1px solid #D1D1D1;
+            display: $display-flex;
+            .col-image {
+                flex: 0 40%;
+                padding-right: 2%;
+                img {
+                    width: $width-100;
+                    border-radius: $border-radius-5;
+                    height: 170px;
+                    object-fit: cover;
+                }
+            }
+            .col-info {
+                flex: 1;
+                padding-right: 2%;
+                .title {
+                    margin-top: 20px;
+                    font-size: $font-size-13;
+                    font-weight: $font-weight;
+                    color: #606060;
+                }
+                .services {
+                    font-size: $font-size-15;
+                    font-weight: $font-weight;
+                    color: $dark-color;
+                    span {
+                        &:last-child {
+                            .comma {
+                                display: $display-none;
+                            }                            
+                        }
+                    }
+                }
+                .cancellation-policy {
+                    padding: 0 5px;
+                    border-radius: $border-radius-10;
+                    color: $white-color;
+                    font-size: $font-size-11;
+                    background: #1E7DFF;
+                    cursor: $cursor-pointer;                    
+                    margin-top: 7px;
+                    display: $display-inline-block;
+                    span {
+                        display: $display-flex;
+                        align-items: $align-items-center;
+                        img {
+                            margin-left: 5px;
+                        }
+                    }
+                }
+            }
+            .col-button {
+                button {
+                    background: #F8F8F8;
+                    border: $border-none;
+                    border-radius: $border-radius-5;
+                    color: #2681FF;
+                    font-weight: $font-weight;
+                    cursor: $cursor-pointer;
+                    padding: 5px 10px;
+                    transition: 0.3s all ease-in;
+                    img {
+                        margin-right: 10px;
+                    }
+                    &:hover,
+                    &:focus,
+                    &:active {
+                        box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
+                        outline: $none;
+                    }
+                }
+            }
+        }
+    }
+}

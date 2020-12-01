@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="25.809" height="18.548" viewBox="0 0 25.809 18.548">
+  <g id="Sent_mail" data-name="Sent mail" transform="translate(-0.75 -17.75)">
+    <path id="Path_12714" data-name="Path 12714" d="M2,40.537,12.7,34" transform="translate(-0.406 -5.083)" fill="#999"/>
+    <path id="Path_12715" data-name="Path 12715" d="M38.7,40.537,28,34" transform="translate(-12.982 -5.083)" fill="#999"/>
+    <g id="Group_5109" data-name="Group 5109" transform="translate(1 18)">
+      <path id="Path_12716" data-name="Path 12716" d="M25.759,18H1.55a.6.6,0,0,0-.55.645V35.4a.6.6,0,0,0,.55.645H25.759a.6.6,0,0,0,.55-.645V18.645A.6.6,0,0,0,25.759,18ZM10.61,28.162,2.1,34.254V20.005Zm.9.865,1.794,1.719a.489.489,0,0,0,.7,0L15.8,29.027,23.8,34.759H3.506Zm5.187-.865,8.509-8.157V34.254Zm7.519-8.873L13.655,29.414,3.091,19.289Z" transform="translate(-1 -18)" fill="#999" stroke="#999" stroke-width="0.5"/>
+    </g>
+  </g>
+</svg>

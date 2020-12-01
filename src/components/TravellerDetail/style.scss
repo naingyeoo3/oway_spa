@@ -1,0 +1,68 @@
+@import '../../styles/main.scss';
+
+.checkout-container {
+    .col-right {
+        .traveller-detail {
+            font-weight: $font-weight;
+            .heading {
+                padding: 10px;
+                &.heading-gray {
+                    border-bottom: 1px solid #CCCCCC;
+                }            
+            }
+            .detail-block {
+                padding: 10px;
+                .detail-item {
+                    display: $display-flex;
+                    justify-content: $justify-content-between;                
+                    margin-bottom: 3px;
+                    .feature {
+                        flex: 0 60%;
+                        display: $display-flex;
+                        font-size: $font-size-13;
+                        color: $dark-color;
+                        .icon {
+                            margin: 0 5px;
+                        }
+                    }
+                    .value {
+                        font-size: $font-size-15;
+                        &.gray {
+                            color: #606060;
+                        }
+                        &.primary {
+                            color: $primary-color;
+                        }
+                    }
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+                &.total-block {
+                    border-bottom: 1px solid #CCCCCC;
+                    border-top: 1px solid #CCCCCC;
+                }
+                &.grand-total {
+                    .detail-item {
+                        align-items: $align-items-center;
+                        .feature {
+                            flex: 0 40%;
+                        }
+                        .value {
+                            font-size: 20px;
+                        } 
+                    }               
+                }
+            }
+            .amount-payable {
+                padding: 7px 10px;
+                background: $primary-color;
+                color: $white-color;
+                font-size: $font-size-13;
+                font-weight: $font-weight-normal;
+                border-radius: 0 0 5px 5px;
+                text-align: $text-right;
+            }
+        }
+    }    
+}

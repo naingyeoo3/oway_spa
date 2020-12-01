@@ -1,0 +1,120 @@
+
+  .CalendarDay__selected {
+    // background: #faa534;
+    color: white;
+  }
+  
+  .CalendarDay__selected:hover,
+  .CalendarDay__selected:active,
+  .CalendarDay__selected:focus {
+    // background: #faa534;
+    color: white;
+  }  
+.CalendarDay__hovered_span:hover,
+.CalendarDay__hovered_span:active,
+.CalendarDay__hovered_span:focus
+.DayPicker_transitionContainer {
+  overflow-y: hidden;
+}
+.CalendarMonth_caption {
+  color: #222222;
+  font-size: 13px;
+  padding-top: 20px;
+  font-family:  'Lato', sans-serif;
+}
+.DayPicker_weekHeader_li {
+  font-family:  'Lato', sans-serif;
+  small {
+    font-size: 11px;
+    color: #222222;
+    font-weight: 600;
+  }
+}
+.CalendarMonth_table {
+  margin-top: 15px;
+}
+.DayPickerNavigation_button {
+  .anticon {
+    font-size: 20px;
+  }  
+}
+.DayPicker_weekHeader {
+  top: 55px;
+}
+.CalendarDay__default {
+  font-size: 12px;
+  color: #555555;
+  border: none;
+  font-family: 'Lato', sans-serif;
+  font-weight: 600;
+  height: 32px !important;
+  &:hover,
+  &:active,
+  &:focus {
+    background: #FAA534;
+    color: #FFFFFF;
+    border: none;   
+    outline: none;
+  }
+}
+.CalendarDay__blocked_out_of_range {
+  cursor: not-allowed; 
+  border: none;
+  color: #E7E7E7;
+  &:active,
+  &:hover,
+  &:focus {
+    background: transparent;
+    color: #E7E7E7;
+  }
+}
+.CalendarDay__selected {
+  background: #FAA534;
+  color: #FFFFFF;
+  &:active,
+  &:hover,
+  &:focus {
+    background: #FAA534;
+  }
+}
+.CalendarDay__hovered_span {
+  background: rgba(250,165,52,0.25);
+  color: #555555;
+  &:active,
+  &:hover,
+  &:focus {
+    background: rgba(250,165,52,0.25);
+    color: #555555;
+  }
+}
+.CalendarDay__selected_span {
+  background: rgba(250,165,52,0.25);
+  color: #555555;
+  &:active,
+  &:hover,
+  &:focus {
+    background: rgba(250,165,52,0.25);
+    color: #555555;
+  }
+}
+.CalendarDay__selected_start {
+  background: #FAA534;
+  color: #FFFFFF;
+  &:active,
+  &:hover,
+  &:focus {
+    background: #FAA534;
+    color: #FFFFFF;
+    outline: none;
+  }
+}
+.CalendarDay__selected_end {
+  background: #FAA534;
+  color: #FFFFFF;
+  &:active,
+  &:hover,
+  &:focus {
+    background: #FAA534;
+    color: #FFFFFF;
+  }
+}

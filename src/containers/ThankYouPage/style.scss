@@ -1,0 +1,330 @@
+// @import '../../styles/main.scss';
+
+// .checkout-container {
+//     &.thank-you-container {
+//         font-weight: $font-weight;
+//         .col-left {
+//             .success {
+//                 text-align: $text-center;
+//                 .heading {
+//                     font-size: 30px;
+//                     margin: 20px 0 30px;
+//                 }                
+//                 .order-detail {
+//                     margin-top: 17px;
+//                     .payment-success {
+//                         padding: 20px 5px 10px;
+//                         .info {
+//                             font-size: $font-size-15;
+//                             font-weight: $font-weight-normal;
+//                         }
+//                         .booking-id {
+//                             font-size: $font-size-18;
+//                             color: #000000;
+//                             margin-top: 10px;
+//                             span {
+//                                 font-size: 21px;
+//                                 color: #1E7DFF;
+//                             }
+//                         }
+//                     }
+//                     .booking-status {
+//                         background: $white-light-color;
+//                         padding: 8px 5px;
+//                         border-radius: 0 0 5px 5px;
+//                         p {
+//                             font-size: $font-size-13;
+//                             color: #202020;
+//                             display: $display-flex;
+//                             align-items: $align-items-center;
+//                             justify-content: $justify-content-center;
+//                             span {
+//                                 background: #1E7DFF;
+//                                 color: $white-color;
+//                                 border-radius: $border-radius-10;
+//                                 padding: 0 13px;
+//                                 margin-left: 14px;
+//                             }
+//                         }
+//                     }
+//                 }                
+//             }
+//             .alert {
+//                 background: #F2F9FF;
+//                 border: 1px solid #85AED1;
+//                 font-size: $font-size-14;
+//                 font-weight: $font-weight;
+//                 color: $primary-color;            
+//                 padding: 10px 15px;
+//                 border-radius: $border-radius-5;
+//                 margin-bottom: 10px;
+//                 display: $display-flex;
+//                 align-items: $align-items-center;
+//                 img {
+//                     margin-right: 10px;
+//                 }
+//             }
+//             .card {
+//                 &.booking-detail-grid {
+//                     padding: 10px;
+//                     .trip-info {
+//                         color: #666666;
+//                         font-size: $font-size-13;
+//                         margin-bottom: 26px;
+//                     }
+//                     .route-info {
+//                         margin-bottom: 10px;
+//                         border: 1px solid #F2F2F2;
+//                         .title,
+//                         .info {
+//                             display: $display-flex;
+//                             justify-content: $justify-content-between;
+//                             align-items: $align-items-center;
+//                             font-size: $font-size-15;
+//                             padding: 5px 0;
+//                             div {
+//                                 flex: 0 33.33%;
+//                                 margin-right: 2%;
+//                                 color: #333333;
+//                                 &:first-child {
+//                                     padding-left: 10px;
+//                                 }
+//                                 &.col-flight {
+//                                     margin-right: $zero;
+//                                     display: $display-flex;
+//                                     align-items: $align-items-start;
+//                                     img {
+//                                         width: 19px;
+//                                         margin-right: 15px;
+//                                         position: $position-relative;
+//                                         top: 5px;
+//                                     }
+//                                     div {
+//                                         flex: $flex-1;
+//                                     }
+//                                 }
+//                                 .code {
+//                                     font-size: 13px;
+//                                     color: #808080;
+//                                 }
+//                                 .date {
+//                                     font-size: 13px;
+//                                 }
+//                             }                            
+//                         }
+//                         .title {
+//                             background: #F2F9FF;
+//                             color: #6B8299;
+//                         }
+//                     }
+//                     .passenger-info {
+//                         margin: 10px 0;
+//                         .title,
+//                         .info {
+//                             display: $display-flex;
+//                             justify-content: $justify-content-between;
+//                             align-items: $align-items-center;
+//                             font-size: $font-size-13;
+//                             padding: 5px 0;
+//                             div {
+//                                 flex: 0 14%;
+//                                 margin-right: 1%;
+//                                 &:last-child {
+//                                     margin-right: $zero;
+//                                 }
+//                                 &.col-name {
+//                                     flex: 0 18%;
+//                                     padding-left: 10px;
+//                                 }
+//                                 &.col-passenger {
+//                                     flex: 0 10%;
+//                                 }
+//                             }
+//                         }
+//                         .title {
+//                             background: #F2F9FF;                            
+//                             color: #6B8299;                            
+//                         }
+//                         .info {
+//                             border: 1px solid #E6E6E6;
+//                             border-top: $none;
+//                             &:first-of-type {
+//                                 border-top: $none;
+//                             }
+//                         }
+//                     }
+//                 }
+//             }
+//             .card {
+//                 &.contact-info {
+//                     padding: 10px;
+//                     p {
+//                         color: #666666;
+//                         font-size: $font-size-15;
+//                         margin-bottom: 3px;
+//                         &:last-child {
+//                             margin-bottom: $zero;
+//                         }
+//                     }
+//                 }
+//             }
+//             .thank-you-heading {
+//                 border-bottom: 1px solid #D9D9D9;
+//                 padding-bottom: 10px;
+//                 margin-bottom: 7px;
+//             }
+//             .button-group {
+//                 margin: 15px 0;
+//                 button {
+//                     background: $white-color;
+//                     border: $none;
+//                     border-radius: $border-radius-5;
+//                     color: #606060;
+//                     font-size: $font-size-15;
+//                     font-weight: $font-weight;
+//                     padding: 6px;
+//                     margin-right: 10px;
+//                     cursor: $cursor-pointer;
+//                     &:last-child {
+//                         margin-right: $zero;
+//                     }
+//                     img {
+//                         margin-right: 10px;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+// .payment-modal {
+//     &.send-email-modal {
+//         .ant-modal {
+//             .ant-modal-content {
+//                 .ant-modal-body {
+//                     .alert {
+//                         background: #F2F9FF;
+//                         border: 1px solid #85AED1;
+//                         font-size: $font-size-14;
+//                         font-weight: $font-weight;
+//                         color: $primary-color;            
+//                         padding: 10px 15px;
+//                         border-radius: $border-radius-5;
+//                         margin: 10px 0;
+//                     }
+//                     .form-container {
+//                         .card {
+//                             &.form-card {
+//                                 padding: 10px;
+//                                 .form-group {
+//                                     .input-card {
+//                                         flex: $flex-1;
+//                                         padding: $zero;
+//                                         height: $auto;
+//                                         margin: $zero;
+//                                     }
+//                                 }
+//                             }
+//                         }
+//                     }
+//                 }
+//                 .ant-modal-footer {
+//                     border-top: $none;
+//                     padding: 10px 0;
+//                 }
+//             }
+//         }
+//     }
+// }
+// // .thank-you-container {
+// //     .col-left {
+// //         flex: 0 66%;
+// //         .order-status-header {
+// //             font-size: 17px;
+// //             text-align: center;
+// //         }
+// //         .order-detail {
+// //           padding-top: 10px;  
+// //           text-align: center;
+// //           .booking-status {
+// //               background-color:#ddd;
+// //               font-size: small;
+// //               font-weight: bold;
+// //               padding: 5px;
+// //               span {
+// //                   margin:5px ;
+// //                   padding: 5px;
+// //                   background-color: #2681FF;
+// //                   color: white;
+// //               }
+// //           }
+// //         }
+// //         .order-alert{
+// //             background: #F2F9FF;
+// //             border: 1px solid #85AED1;
+// //             font-size: $font-size-14;
+// //             font-weight: $font-weight;
+// //             color: $primary-color;            
+// //             padding: 10px 15px;
+// //             border-radius: $border-radius-5;
+// //             margin-bottom: 10px;
+// //             display: $display-flex;
+// //             align-items: $align-items-center;
+// //             img {
+// //                 margin-right: 10px;
+// //             }
+// //         }
+// //         .traveller-info-detail {
+// //             padding: 5px;
+// //             .route-info {
+// //                 table {
+// //                     width: 100%;
+// //                     th{
+// //                         background: #85AED1;
+// //                         font-size: small;
+// //                         font-weight: bold;
+// //                     }
+// //                 }
+// //             }
+// //             .passenger-info{
+// //                 table {
+// //                     width: 100%;
+// //                     th{
+// //                         background: #85AED1;
+// //                         text-align: center;
+// //                         font-size: small;
+// //                         font-weight: bold;
+// //                     }
+// //                     td{
+// //                        text-align: center;
+// //                        font-size: smaller; 
+// //                        border-bottom: solid 1px #ddd;
+// //                     }
+// //                 }
+// //             }
+// //         }
+// //         .contact-info{
+// //             padding: 5px;
+// //             .contact-info-header {
+// //                 color: #2681FF;
+// //                 font-size: large;
+// //                 font-weight: bold;
+// //                 border-bottom: solid 1px #ddd;
+// //             }
+// //         }
+
+// //         .cancellation-policy{
+// //             padding : 5px;
+// //             .cancellation-policy-header {
+// //                 color: #2681FF;
+// //                 font-size: large;
+// //                 font-weight: bold;
+// //                 border-bottom: solid 1px #ddd; 
+// //             }
+// //         }
+
+
+// //     }
+// //     .col-right {
+// //         flex : 0 33%;
+// //     }   
+// // }

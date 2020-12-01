@@ -1,0 +1,44 @@
+@import './main.scss';
+
+.popular-routes {    
+    text-align: $text-center;
+    background-image: url('../assests/images/pupular-route-bg.jpg');
+    background-size: cover;
+    background-repeat: $background-no-repeat;
+    background-position: center;
+    &.bus {
+        background-image: url('../assests/images/popular-bus-route-bg.jpg');
+    }
+    .header-title {
+        color: $white-color;
+    }
+    .route-list {
+        background: $primary-color;
+        color: $white-color;
+        display: $display-inline-block;
+        font-size: $font-size-15;
+        padding: 3px 10px;
+        border-radius: $border-radius-5;
+        margin: 8px;
+        transition: 0.3s;
+        cursor: $cursor-pointer;
+        font-family: $font-lato;
+        .route-icon {
+            background: url(../assests/images/svg/route.svg);
+            width: 15px;
+            height: 12px;
+            margin: 0 5px;
+            display: $display-inline-block;
+        }        
+        &:hover,
+        &:active,
+        &:focus { 
+            background: $secondary-color;
+            box-shadow: 0 0 14px rgba(249, 165, 51, 0.5);
+            text-shadow: 0 1px 1px rgba(0, 0, 0, 0.16);
+            .route-icon {
+                background: url(../assests/images/svg/route-hover.svg);
+            }        
+        }
+    }
+}

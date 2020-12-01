@@ -1,0 +1,310 @@
+@import 'main.scss';
+.traveler{
+    height: 100%;
+    .popover-open-btn{
+        height: 100%;
+    }
+}
+.search-input-section {
+    .traveller-column {
+        .ant-form-item-control {
+            cursor: pointer;
+            .popover-open-btn {
+                line-height: 22px;
+                padding: 3px 0;
+                font-size: 17px;
+                font-weight: 500;
+                color: #404040;
+                span {        
+                    display: block;
+                    color: #FAA534;
+                    font-size: 13px;
+                    text-transform: uppercase;
+                    margin-top: 1px;
+                    font-weight: $font-weight-600;
+                }
+                .traveler-title {
+                    margin-top: 2px;
+                    span {
+                        color: #404040;
+                        font-weight: 500;
+                        font-size: 16px;
+                        padding: 0 5px 0 20px;
+                        display: inline;
+                        font-family: $font-lato;
+                        &.room {
+                            padding: 0 5px 0 22px;
+                        }           
+                    }     
+                }        
+            }
+        }        
+    }    
+}
+.search-dropdown-traveler {
+    width: 290px;
+    border-radius: $border-radius-5;
+    padding-top: $padding-top-0;
+    z-index: 1;
+    .ant-popover-content {
+        .ant-popover-arrow {
+            display: $display-none;
+        }
+        .ant-popover-inner {
+            box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+            border: 0;
+            .ant-popover-inner-content {
+                padding: $padding-0;
+                .traveler-select {
+                    padding: 8px 8px 8px 10px;
+                    .select-adults {
+                        display: $display-flex;
+                        justify-content: $justify-content-around;
+                        height: 45px;
+                        align-items: $align-items-center;
+                        label {
+                            &.select-item {
+                                flex: 3;
+                                text-align: $text-left;
+                                padding-left: 25px;
+                                color: #555555;                    
+                                &.child {
+                                    line-height: 20px;                        
+                                }
+                                .traveller-label {
+                                    span {
+                                        font-size: $font-size-15;
+                                        display: $display-block;
+                                        margin-bottom: 5px;
+                                    }                    
+                                }
+                                span {
+                                    font-size: 11px;
+                                    display: $display-block;
+                                    line-height: 10px;
+                                    color: #555555;                    
+                                }
+                            }                            
+                        }
+                        .select-item {
+                            text-align: $text-center;
+                            font-size: $font-size-15;
+                            width: 20px;
+                            font-weight: $font-weight-600;
+                            &.icon {
+                                margin: 0 10px 0 0;
+                                cursor: $cursor-pointer;
+                                width: auto;
+                                background: transparent;
+                                border: $border-none;
+                                &:last-child {
+                                    margin: 0 0 0 10px;
+                                }
+                                &:focus {
+                                    outline-style: none;
+                                    box-shadow: none;
+                                    border-color: transparent;
+                                }
+                            }
+                            &.count {
+                                font-family: $font-lato;
+                            }                            
+                            &:focus{
+                                box-shadow: none;
+                            }
+                        }
+                    }
+                    .age-title {
+                        font-size: $font-size-13;
+                        text-align: $text-center;
+                        font-weight: $font-weight-600;
+                        margin: 10px 0;
+                    }
+                    .age-selector {
+                        display: $display-flex;
+                        flex-wrap: wrap;
+                        justify-content: $justify-content-start;
+                        .sub-age {
+                            flex-basis: 33.33%;
+                            padding: 5px 8px;
+                            select {
+                                width: $width-100;
+                                height: 25px;
+                                border-radius: 2px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.ant-dropdown {
+        padding: 7px;
+    }
+}
+.adult {            
+    background: url(../assests/images/svg/adult.svg) no-repeat;
+}
+.child {            
+    background: url(../assests/images/svg/child.svg) no-repeat;
+}
+.infant {            
+    background: url(../assests/images/svg/infant.svg) no-repeat;
+}
+.room {
+    background: url(../assests/images/svg/room.svg) no-repeat;
+    background-size: 18px;
+    background-position: left;
+}
+.ant-popover{
+    &.top-header-dropdown{
+        .ant-popover-content{
+            border:none;
+            .ant-popover-arrow{
+                border-top-color: #fff;
+                border-right-color: #fff;
+                border-bottom-color: #fff;
+                border-left-color: #fff;
+            }
+            .ant-popover-inner-content{
+                padding:5px 0px;
+                border:none;
+                ul{
+                    li{
+                        a{
+                            padding:3px 10px 3px;
+                            display: block;
+                            font-size: 13px;
+                            transition: $transition-style-alt;
+                            //font-family: $font-lato;
+                            font-weight: $font-weight-600;
+                            &:hover,
+                            &:active,
+                            &:focus {
+                                color:$primary-color;
+                                background:$primary-color-alt;
+                            }
+                            span {
+                                display: inline;
+                            }
+                        }
+                        span {
+                            padding:3px 10px 3px;
+                            display: block;
+                            font-size: 13px;
+                            transition: $transition-style-alt;
+                            //font-family: $font-lato;
+                            font-weight: $font-weight-600;
+                            cursor: $cursor-pointer;
+                            &:hover,
+                            &:active,
+                            &:focus {
+                                color:$primary-color;
+                                background:$primary-color-alt;
+                            }
+                            span {
+                                display: inline-block;
+                            }
+                        }
+                    }
+                    &.account-profile {
+                        .ant-avatar {
+                            &.ant-avatar-icon {
+                                background: transparent;
+                                width: 20px;
+                                margin: 0 5px;
+                                padding: 0;
+                                display: initial;
+                                font-size: 18px;
+                                vertical-align: initial;
+                                i {
+                                    color: #404040;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .traveler-select {
+        .select-adults {
+            display: $display-flex;
+            justify-content: $justify-content-around;
+            align-items: $align-items-center;
+            padding: 10px 20px;
+            label {
+                &.select-item {
+                    padding-left: 30px;
+                    width: 100px;
+                    flex: $flex-1;
+                    text-align: $text-left;
+                    .traveller-label {
+                        span {
+                            font-size: $font-size-15;
+                            display: $display-block;
+                            margin-bottom: 5px;
+                        }                    
+                    }
+                    span {
+                        font-size: 11px;
+                        display: $display-block;
+                        line-height: 10px;
+                        color: #555555;
+                    }                    
+                }
+            }
+            .select-item {
+                text-align: $text-center;
+                font-size: $font-size-15;
+                width: 50px;
+                &.icon {
+                    margin: $margin-0;
+                    cursor: $cursor-pointer;
+                    width: auto;
+                    background: transparent;
+                    border: $border-none;
+                    &:focus {
+                        outline-style: none;
+                        box-shadow: none;
+                        border-color: transparent;
+                    }
+                }
+                &.count {
+                    font-family: $font-lato;
+                }                
+                &:focus{
+                    box-shadow: none;
+                    outline: none;
+                }
+            }
+            // .select-item.view-count{
+            //     min-width: 32px;
+            //     padding: 0;
+            // }
+        }
+        .age-title {
+            font-size: $font-size-13;
+            text-align: $text-center;
+            font-weight: $font-weight-600;
+            margin: 10px 0;
+        }
+        .age-selector {
+            display: $display-flex;
+            flex-wrap: wrap;
+            justify-content: $justify-content-start;
+            .sub-age {
+                flex-basis: 33.33%;
+                padding: 5px 8px;
+                select {
+                    width: $width-100;
+                    height: 30px;
+                    border-radius: 2px;
+                }
+            }
+        }
+    }
+}

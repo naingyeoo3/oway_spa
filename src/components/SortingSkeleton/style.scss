@@ -1,0 +1,22 @@
+@import '../../styles/main.scss';
+
+.sorting-skeleton {
+    height: 39px;
+    display: $display-flex;
+    align-items: $align-items-center;
+    justify-content: $justify-content-between;
+    padding: 0 15px;
+    .sorting-by {
+        width: 6%;
+        height: 20px;
+    }
+    .sorting-filter {
+        width: 60%;
+        display: $display-flex;
+        justify-content: $justify-content-between;
+        div {
+            width: 10%;
+            height: 20px;
+        }
+    }
+}

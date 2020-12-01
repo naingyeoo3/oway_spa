@@ -1,0 +1,235 @@
+@import './main.scss';
+
+.checkout-container {
+    font-weight: $font-weight;
+    input {
+        border: $none;
+        font-weight: $font-weight;
+        &:hover,
+        &:focus,
+        &:active {
+            outline: $none;
+        }
+        &::-webkit-input-placeholder {
+            color: #CCCCCC;
+            font-weight: $font-weight-normal;
+        }
+        &:-ms-input-placeholder {
+            color: #CCCCCC;
+            font-weight: $font-weight-normal;
+        }
+        &::placeholder {
+            color: #CCCCCC;
+            font-weight: $font-weight-normal;
+        }
+    }
+    button {
+        cursor: $cursor-pointer;
+        &:hover,
+        &:focus,
+        &:active {
+            outline: $none;
+        }
+    }
+    .alert {
+        display: $display-flex;
+        align-items: $align-items-center;
+        background: #F2F9FF;
+        border: 1px solid #85AED1;
+        border-radius: $border-radius-5;
+        padding: 10px 15px;
+        color: $primary-color;
+        font-size: $font-size-15;
+        margin-bottom: 10px;
+        img {
+            margin-right: 10px;
+        }
+    }
+    .col-left {
+        /* Mobile Payment [KBZPay, WavePay, OnePay] */
+        .mobile-payment {            
+            .total-amount {
+                text-align: $text-center;
+                margin-bottom: 30px;
+                .paid-text {
+                    color: #202020;
+                    font-size: $font-size-17;
+                }
+                .grand-total {
+                    font-size: 28px;
+                }
+                .amount-payable {
+                    color: #999999;
+                }
+            }
+            .payment-block {
+                padding: 10px;
+                background: $white-color;
+                border-radius: $border-radius-10;
+                .payment-process {
+                    display: $display-flex;
+                    .qr-code {
+                        border-right: 1px solid #85AED1;
+                        padding: 25px;
+                        img {
+                            width: 155px;
+                        }
+                    }
+                    .make-payment {
+                        padding: 25px;
+                        .orderno-text {
+                            color: #6E6E6E;
+                        }
+                        .orderno {
+                            font-size: $font-size-17;
+                            margin-bottom: 33px;
+                        }
+                        .loading {
+                            font-size: $font-size-15;
+                            color: $secondary-color;                            
+                            position: $position-relative;
+                            .loading-img {
+                                position: $position-absolute;
+                                left: $zero;
+                                bottom: $zero;
+                                &::after {
+                                    content: " ";
+                                    display: $display-block;
+                                    width: 19px;
+                                    height: 19px;
+                                    border-radius: 50%;
+                                    border: 3px solid $secondary-color;
+                                    border-top-color: $white-color;
+                                    animation: loading-img 1.2s linear infinite;
+                                }
+                            }
+                            span {
+                                margin-left: 50px;
+                            }
+                        }
+                        .mobile-number {
+                            position: $position-relative;
+                            .enter-no {
+                                color: #6E6E6E;
+                                font-size: $font-size-13;
+                                font-weight: $font-weight-normal;
+                                margin-bottom: 5px;
+                            }
+                            .mobile-column {
+                                display: $display-flex;
+                                align-items: $align-items-end;
+                                .card {
+                                    padding: 10px;
+                                    label {
+                                        display: $display-block;
+                                        font-size: $font-size-11;
+                                        color: #999999;
+                                    }
+                                    .divide-column {
+                                        display: $display-flex;
+                                        align-items: $align-items-center;
+                                    }
+                                    .dial-code {
+                                        color: #202020;
+                                        font-size: $font-size-15;
+                                        margin-right: 15px;
+                                    }
+                                    input {
+                                        height: 20px;
+                                    }
+                                }
+                                button {
+                                    margin-bottom: 10px;
+                                    background: $secondary-color;
+                                    border-radius: $border-radius-3;
+                                    border: $none;
+                                    color: $white-color;
+                                    padding: 6px 31px;
+                                    margin-left: 10px;
+                                }
+                            }                            
+                        }
+                    }
+                }
+                .info-text {
+                    color: #454443;
+                    padding: 10px 25px;
+                    background: #F3F3F3;
+                    border-top: 1px solid #E8E8E8;
+                    border-radius: 0 0 5px 5px;
+                }
+                .how-to-pay {
+                    background: #F2F9FF;
+                    border: 1px solid #85AED1;
+                    border-radius: $border-radius-5;
+                    display: $display-flex;
+                    padding: 10px 25px;                    
+                    .steps {
+                        padding-left: 45px;
+                        p {
+                            font-size: $font-size-15;
+                        }
+                        ul {
+                            margin-top: 10px;
+                            li {
+                                color: #6B8299;
+                            }
+                        }
+                    }
+                    &.one-wave-pay {
+                        display: $display-block;
+                        .title {
+                            text-align: $text-center;
+                            font-size: $font-size-20;
+                            margin: 20px 0;
+                        }
+                        .how-to-row {
+                            display: $display-flex;
+                            justify-content: $justify-content-between;
+                            .how-to-column {
+                                background: $secondary-color;
+                                flex: 0 49%;
+                                display: $display-flex;
+                                align-items: $align-items-center;
+                                color: $white-color;;
+                                border-radius: $border-radius-3;
+                                font-size: $font-size-15;
+                                .no {
+                                    font-size: 25px;
+                                    background: #F79612;
+                                    padding: 10px 15px;
+                                    margin-right: 10px;
+                                    border-radius: 3px 0 0 3px;
+                                }
+                            }
+                            &:last-child {
+                                margin-top: 20px;
+                                div {
+                                    flex: $flex-1;
+                                    text-align: $text-center;
+                                    img {
+                                        max-width: $width-100;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            @keyframes loading-img {
+                0% {
+                    transform: rotate(0deg);
+                }
+                100% {
+                    transform: rotate(360deg);
+                }
+            }            
+            .error {
+                color: #FF0000;
+                font-size: $font-size-11;
+                position: $position-absolute;
+                bottom: -6px;
+            }
+        }
+    }
+}

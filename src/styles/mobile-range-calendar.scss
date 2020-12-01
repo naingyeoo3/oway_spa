@@ -1,0 +1,127 @@
+.mobile-calendar {
+    margin: 0 -10px;
+    .mobile-calendar-input {        
+        background: #F5F5F5;
+        display: flex;
+        justify-content: flex-start;
+        padding: 15px;
+        align-items: center;
+        div {
+            flex: 1;
+            font-family: 'Lato', sans-serif;
+        }
+        .active{
+            color: #0A56BB;
+            border-color: #0A56BB;            
+            .date-string {
+                color: #0A56BB;
+                border-color: #0A56BB;           
+            }
+        }
+        .oneway-info {
+            text-align: right;
+            color: #0A56BB;
+        }
+        .title {
+            &.active {
+                color: #0A56BB;
+            }
+        }
+        .date-string {
+            color: #535353;
+            font-size: 13px;
+            display: flex;
+            border-bottom: 3px solid transparent;
+            padding-bottom: 5px;
+            div {
+                &:first-child {
+                    font-size: 40px;
+                    line-height: 40px;
+                    margin-right: 10px;
+                    flex: unset;
+                }
+                span {
+                    &:first-child {
+                        padding-right: 5px;
+                    }
+                    &:last-child {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+    .DayPicker {
+        &.DayPicker__withBorder {
+            box-shadow: none;
+            border-radius: 0;
+            background: #F5F5F5;
+        }
+        .DayPicker_weekHeaders {
+            .DayPicker_weekHeader {
+                top: -1px;
+                right: 0;
+                left: 0 !important;
+                margin-left: 0 !important;
+                text-align: center;
+                background: #F5F5F5;
+                &.DayPicker_weekHeader__vertical {
+                    left: 17%;
+                }
+                .DayPicker_weekHeader_ul {
+                    margin: 5px 0 15px 0;
+                    .DayPicker_weekHeader_li {
+                        width: 14.2% !important;
+                        small {
+                            font-size: 13px;
+                            color: #535353;
+                        }
+                    }
+                }                
+            }
+        }
+        .DayPicker_focusRegion {
+            padding-top: 20px;
+            .DayPickerKeyboardShortcuts_buttonReset {
+                display: none;
+            }
+            .DayPickerNavigation__verticalDefault {
+                display: none;
+            }
+            .DayPicker_transitionContainer {
+                max-height: 600px;
+                overflow-y: scroll;                
+                .CalendarMonthGrid__vertical {
+                    width: 100% !important;
+                }
+                .CalendarMonth_caption {
+                    color: #202020;
+                    font-size: 15px;
+                    padding-bottom: 5px;
+                    padding-top: 35px;
+                }
+                .CalendarMonth_table {
+                    margin-top: 10px;
+                    width: 100%;
+                    .CalendarDay__default {
+                        height: 38px !important;
+                    }
+                    .CalendarDay__blocked_out_of_range {
+                        color: #E7E7E7;
+                    }
+                }
+            }
+        }
+    }
+    .btn-orange {
+        width: 80%;
+        border: none;
+        margin: 20px auto;
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        font-family: 'Lato', sans-serif;
+    }
+}

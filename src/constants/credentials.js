@@ -1,0 +1,24 @@
+export const API_URL = "https://devtestapi.owaytrip.com";
+export const DEV_TEST_AI = "https://devtestai.owaytrip.com";
+export const FLIGHT_AUTOCOMPLETE_API = 'https://38jjoekecg.execute-api.ap-southeast-1.amazonaws.com/api/cities/search';
+export const ENV_URL = "https://development.owaytrip.com";
+export const DEV_URL = "https://development.owaytrip.com";
+export const BASE_URL = "http://sandbox.travel.spa.s3-website-ap-southeast-1.amazonaws.com";
+export const HOTEL_API_URL = "https://ypqp5te5sb.execute-api.ap-southeast-1.amazonaws.com/api/search";
+export const HOT_DEALS_URL = "https://devtestai.owaytrip.com/hotdeal/banners";
+export const TOUR_API_KEY = 'P1iHwaexXQsqOBJ4BZqrbEYcXS2QMguhjSbZzoh2Fh8=';
+export const BUS_API_KEY = 'dZIA6qy8Q4Sxfg\/+IsCS44pwnkzp7se2bhQJJ8dLwzg=';
+export const API_KEY = "Kpp69BQ8ihwwLsPwSEexjqKAbf+fSSbQ/qlz9Nuy/O0=";
+export const FLIGHT_API_KEY="Kpp69BQ8ihwwLsPwSEexjqKAbf+fSSbQ\/qlz9Nuy\/O0="
+export const HOTEL_API_KEY = "oR3Khan7h1UOjafFCpzdgnNKX5/WyQa1sgzDYNXd0ak=";
+export const CHECKOUT_API_KEY = "YL/7P6Cp3y043q6pciOhPOUvnR+npllo2QqpHE+Bc7o=";
+export const ALL_CHECKOUT_API_KEY = "YL/7P6Cp3y043q6pciOhPOUvnR+npllo2QqpHE+Bc7o=";
+export const PAYMENT_API_KEY = "GBVL5EKDe7JL7wQuaY9NgAY3xQH9IYuZZCkSilPMmwI=";
+export const CONFIRM_API_KEY = "YL/7P6Cp3y043q6pciOhPOUvnR+npllo2QqpHE+Bc7o="
+export const SUBSCRIBE_API_URL = "https://devtestai.owaytrip.com/email-subscribe/store";
+export const SUBSCRIBE_API_KEY = "YL/7P6Cp3y043q6pciOhPOUvnR+npllo2QqpHE+Bc7o=";
+export const ORDER_API_KEY = "oR3Khan7h1UOjafFCpzdgnNKX5\/WyQa1sgzDYNXd0ak=";
+export const HOTEL_ORDER_INSERT = "e6ZFPyyAFl2Gw30IdQ1cUgGBeFiJ2mpYK9Yx72cFcQ8=";
+export const VISA_API_KEY = "FhaoPHgI7CQbZSnq9A0vzwC87sQdfMdu9goPMQMvz5I=";
+export const USER_API_KEY = "YL\/7P6Cp3y043q6pciOhPOUvnR+npllo2QqpHE+Bc7o="
+export const VERIFY_KEY = "AMu4OEU7WeUN4xkcivLfV1ZGKvQ3MHnAYRQlemoL3ro=";

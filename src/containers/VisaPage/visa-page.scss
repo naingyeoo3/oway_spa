@@ -1,0 +1,82 @@
+@import '../../styles/main.scss';
+
+.visa-popular-destination {
+    //background: #F2F5F9;
+    background: linear-gradient(0deg, #F2F5F9 0%, rgba(249, 249, 249, 0) 100%);
+    padding: $section-padding;
+    padding-bottom: 100px;
+    //border-top: $border-width-1 $border-style-solid #E2E2E2;
+    .destination-row {
+        display: $display-flex;
+        justify-content: $justify-content-between;
+        margin: 26px 0;        
+        .destination-img {
+            box-shadow: $hover-shadow;
+            transition: $transition-style-alt;
+            height: 150px;
+            width: $width-100;
+            border-radius: $border-radius-10;
+            background-position: $background-position-center;
+            background-size: $background-size-100;
+            background-repeat: $background-no-repeat;
+            position: $position-relative;
+            margin: 0 10px;            
+            &:first-child {
+                margin-left: $margin-left-0;
+            }
+            &:last-child {
+                margin-right: $margin-right-0;
+            }
+            &:hover,
+            &:active,
+            &:focus {
+                box-shadow: none;
+                background-size: 110% 110%;
+            }
+            .city-info {
+                position: $position-absolute;
+                bottom: $bottom-0;
+                left: $left-0;
+                right: $right-0;
+                padding-bottom: 15px;
+                padding-top: 30px;
+                background: rgb(32,32,32);
+                background: linear-gradient(180deg, rgba(32,32,32,0) 0%, rgba(32,32,32,1) 100%);
+                border-radius: 0 0 10px 10px;
+                h5 {
+                    text-align: $text-center;
+                    color: $white-color;
+                    font-size: $font-size-17;
+                    letter-spacing: 0.5px;
+                    text-transform: $text-transform-uppercase;
+                }
+                ul {
+                    color: $white-color;
+                    display: $display-flex;
+                    justify-content: $justify-content-center;
+                    li {
+                        a {
+                            color: $white-color;
+                            transition: 0.3s;
+                            font-family: $font-lato;
+                            &:hover,
+                            &:active,
+                            &:focus {
+                                color: $secondary-color;
+                            }                            
+                        }
+                        span {
+                            margin: 0 10px;
+                            font-size: 30px;
+                            display: $display-inline-block;
+                            line-height: $line-height-0;
+                        }
+                    }
+                }
+            }
+        }  
+    }
+    @media screen and (max-width: 991px) {
+        display: none;
+    }
+}

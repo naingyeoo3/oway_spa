@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="/oway.ico" />
+    <meta name="theme-color" content="#000000" /> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" /> <!-- force IE out of compatibility mode -->       
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=no"/> 
+    <meta name="description" content="Plan your trip with Oway. Book flights, hotels, and tours online or by phone with Myanmar's best travel agency. Instant savings and great prices guaranteed!">
+    <meta name="keywords" content="Oway, Owaytour, Myanmar, Burma, Airlines, Booking, Yangon, Mandalay, Nyaung U, Bagan, Flights, Portal, Tickets, Singapore, Bangkok, Vietnam, Reservation, Accommodation, Discounts, Hotel, Lodging, Deals, Budget Hotels, Cheap, Discount, Bus, EasyBook, Express, International, Domestic, Holidays, Package, Flexible, Travel, Popular, Airfare, Travel Agent, Myanmar Visa, Myanmar Passport, Myanmar eVisa, Find, Offer, Villas, World, Experience, Airport, Price, Top, Details, Hotel Yangon">
+    <meta name="author" content="Oway">  
+     <!-- Schema.org markup for Google+ -->
+    <meta itemprop="name" content="Flights, Hotels, Buses, Tours, Visa & Cars Booking - Myanmar | Oway">
+    <meta itemprop="description" content="Myanmar’s first one-stop online travel portal, offering the largest inventory of hotels, flights, cars, buses, and tours, with multiple secure payment options for local and international travelers.">
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="product">
+    <meta name="twitter:site" content="Oway Travel and Tours">
+    <meta name="twitter:title" content="Flights, Hotels, Buses, Tours, Visa & Cars Booking - Myanmar | Oway">
+    <meta name="twitter:description" content="Myanmar’s first one-stop online travel portal, offering the largest inventory of hotels, flights, cars, buses, and tours, with multiple secure payment options for local and international travelers.">  
+    <!-- Open Graph data -->
+    <meta property="og:title" content="Flights, Hotels, Buses, Tours, Visa & Cars Booking - Myanmar | Oway" />
+    <meta property="og:type" content="profile" />
+    <meta property="og:url" content="https://oway.com.mm" />
+    <meta property="og:description" content="Myanmar’s first one-stop online travel portal, offering the largest inventory of hotels, flights, cars, buses, and tours, with multiple secure payment options for local and international travelers.">    
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Lato&display=swap" as="font" crossorigin>
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <!-- <link rel="manifest" href="./manifest.json" /> -->
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->    
+    <!-- Google Tag Manager -->
+    <script>
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-WXTVDR9');
+    </script>    
+    <!-- End Google Tag Manager -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-139420596-1"></script>    
+    
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+  
+      gtag('config', 'UA-139420596-1');
+    </script> 
+    <% if (htmlWebpackPlugin.options.prodEnv) { %>
+      <script type="text/javascript" src="/clevertap_service.js"></script>
+    <% } %>
+    <% if (htmlWebpackPlugin.options.devEnv) { %>
+      <script type="text/javascript" src="/clevertap.js"></script>
+    <% } %>
+    <% if (htmlWebpackPlugin.options.trackJSToken) { %>
+      <script>
+        window._trackJs = {
+          token: '<%= htmlWebpackPlugin.options.trackJSToken %>',
+          version: '<%= htmlWebpackPlugin.options.trackJSVersion %>'
+        };
+      </script>    
+      <script src="https://cdn.trackjs.com/agent/v3/latest/t.js"></script>
+    <% } %>         
+    
+    <title>Oway Travel: Search Myanmar Hotels, Cheap Flights, Vacations, Tours</title>
+    <style>
+      body, html {
+        margin: 0;
+        padding: 0;
+        height: 110vh;
+      }
+      ul {
+        margin: 0;
+        padding: 0;
+      }
+      .body {
+        background: linear-gradient(to bottom, rgba(58,111,181,1) 0%, rgba(246,246,246,1) 52%, rgba(249,249,249,1) 100%);        
+        height: 110vh;
+        margin: 0;
+        padding: 0;
+      }
+      .sub-body {
+        max-width: 1170px;
+        margin: 0 auto;
+        padding-right: 15px;
+        padding-left: 15px;
+      }
+      .header {             
+        height: 45px;
+        display: flex;
+        align-items: center;
+      }
+      .header .left {
+        flex: 1;
+      }
+      .header ul li {
+        height: 20px;
+        min-width: 60px;        
+        float: left;
+        list-style: none;
+        animation: shine-lines 1.6s infinite linear;
+        background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.15) 0px, rgba(0, 0, 0, 0.25) 40px, rgba(0, 0, 0, 0.15) 80px);
+        background-size: 600px;        
+      }      
+      .header b {
+        color: rgba(0, 0, 0, 0.15);
+        margin: 0 10px;
+        float: left;
+      }
+      .loading-menu-main {
+        display: flex;
+        width: 100%;
+      }
+      .loading-logo {
+        flex: 1;
+        height: 44px;
+      }
+      .loading-logo img {
+        width: 100px;
+      }
+      .loading-logo p {
+        margin-top: 2px;
+        width: 230px;
+        height: 20px;
+        animation: shine-lines 1.6s infinite linear;
+        background-image: linear-gradient(90deg, #ececee 0px, #f9f9f9 40px, #ececee 80px);
+        background-size: 600px;
+      }
+      .loading-menu {
+        background-color: #fff;
+        border-radius: 10px 10px 0 0;
+      }
+      .loading-menu ul li {
+        list-style: none;
+        float: left;
+        padding: 0 18px;
+      }
+      .loading-menu ul li span {
+        color: transparent;
+        display: block;
+        font-size: 13px;
+        animation: shine-lines 1.6s infinite linear;
+        background-image: linear-gradient(90deg, #ececee 0px, #f9f9f9 40px, #ececee 80px);
+        background-size: 600px;
+      }
+      .loading-menu ul li span.icon {
+        width: 60px;
+        height: 40px;        
+        border-radius: 5px;
+        margin: 13px 0 7px;
+      }      
+      .section {        
+        border-radius: 10px 0 10px 10px;
+        background: #fefefe;
+        height: 281px;        
+        box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.14);
+      }
+      .ongoing .header-title {        
+        animation: shine-lines-medium 1.6s infinite linear;
+        background-image: linear-gradient(90deg, #ececee 0px, #f9f9f9 40px, #ececee 80px);
+        background-size: 100%;
+        color: transparent;
+        width: 320px;
+        margin: 0 auto 10px;
+      }
+      .ongoing small {
+        color: transparent;
+        width: 120px;
+        margin: 0 auto 30px;
+        display: block;
+        animation: shine-lines 1.6s infinite linear;
+        background-image: linear-gradient(90deg, #ececee 0px, #f9f9f9 40px, #ececee 80px);
+        background-size: 600px;
+      }
+      .ongoing {
+        padding: 50px 0;        
+      }
+      .ongoing ul {
+        text-align: center;
+      }
+      .ongoing ul li {
+        width: 31%;
+        height: 218px;        
+        display: inline-block;
+        list-style-type: none;
+        margin: 0 8px;
+        box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.14);
+        border-radius: 10px;
+        animation: shine-lines-big 1.6s infinite linear;
+        background-image: linear-gradient(90deg, #ececee 0px, #f9f9f9 40px, #ececee 80px);
+        background-size: 600px;
+      }
+      .mobile-logo {
+        display: none;
+      }
+      @keyframes shine-lines {
+        0% {
+          background-position: -100px;
+        }
+        40%, 100% {
+         background-position: 140px;
+        }    
+      }
+      @keyframes shine-lines-medium {
+        0% {
+          background-position: -100px;
+        }
+        40%, 100% {
+         background-position: 265px;
+        }    
+      }
+      @keyframes shine-lines-big {
+        0% {
+          background-position: -100px;
+        }
+        40%, 100% {
+         background-position: 350px;
+        }    
+      }
+      @media screen and (max-width: 991px) {
+        .body {
+          background: #eeeeee;
+        }
+        .sub-body {
+          padding: 0;
+        }
+        .header,
+        .loading-logo p,
+        .section,
+        .ongoing,
+        .loading-menu,
+        .desktop-logo {
+          display: none;
+        }
+        .loading-logo {
+          padding: 10px;
+          background: #FFFFFF;
+          border-bottom: 1px solid #cccccc;
+        }
+        .loading-logo img {
+          width: 110px;
+        }
+        .mobile-logo {
+          display: block;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <noscript style="display:none">You need to enable JavaScript to run this app.</noscript>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WXTVDR9"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div id="root">       
+      <div class="body">
+        <div class="sub-body">
+          <div class="header">
+            <div class="left">
+              <ul>
+                <li>&nbsp;</li>
+                <b>|</b>
+                <li>&nbsp;</li>
+                <b>|</b>
+                <li>&nbsp;</li>
+              </ul>
+            </div>
+            <div class="right">
+              <ul>
+                <li>&nbsp;</li>
+                <b>|</b>
+                <li>&nbsp;</li>
+                <b>|</b>
+                <li>&nbsp;</li>
+                <b>|</b>
+                <li>&nbsp;</li>
+                <b>|</b>
+                <li>&nbsp;</li>
+                <b>|</b>
+                <li>&nbsp;</li>
+              </ul>
+            </div>
+          </div>
+          <div class="loading-menu-main">
+            <div class="loading-logo">
+                <span class="mobile-logo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="107.008" height="47.073" viewBox="0 0 107.008 47.073">
+                  <g id="Logo" transform="translate(0 6)">
+                    <g id="Group_6" data-name="Group 6" transform="translate(0 -6)">
+                      <g id="Group_5" data-name="Group 5">
+                        <g id="Group_4" data-name="Group 4">
+                          <g id="Group_3" data-name="Group 3">
+                            <path id="Path_1" data-name="Path 1" d="M429.935,7.01c8.607-.324,16.778,7.006,17.668,16.381.514,5.443-.578,10.457-4.073,14.8a17.423,17.423,0,0,1-29.436-3.336c-4.629-9.45-1.224-20.934,7.678-25.865a15.929,15.929,0,0,1,8.163-1.981m14.2,18.646a14.988,14.988,0,0,0-3.693-10.1c-4.924-5.715-12.789-6.717-18.518-2.367a16.327,16.327,0,0,0-2.083,23.6,13.462,13.462,0,0,0,18.8,1.33,15.78,15.78,0,0,0,5.493-12.459" transform="translate(-412.028 -7)" fill="#0a56bb" fill-rule="evenodd"/>
+                            <path id="Path_2" data-name="Path 2" d="M448.188,29.73q1.883-6.418,3.759-12.838c.174-.617.416-1.224.532-1.85.157-.832.592-1.046,1.4-1.037.765.008,1.03.31,1.225.992,1.335,4.648,2.708,9.285,4.074,13.93.077.248.163.494.264.788.485-.224.469-.683.586-1.047,1.39-4.469,2.794-8.94,4.136-13.434.273-.91.633-1.386,1.621-1.2a2.279,2.279,0,0,0,.673,0c.836-.1,1.03.116.749.974-1.726,5.171-3.38,10.35-5.056,15.529-.437,1.373-.9,2.738-1.326,4.1-.222.68-.282,1.317-1.344,1.3-1.1-.016-1.06-.757-1.249-1.4-1.458-4.888-2.9-9.779-4.346-14.666-.468.088-.39.462-.468.724-1.4,4.79-2.81,9.572-4.182,14.37-.18.638-.4.951-1.124.945a1.124,1.124,0,0,1-1.272-.94q-3.173-10-6.446-19.963c-.28-.847-.107-1.016.726-1,1.835.03,1.835-.009,2.38,1.716q2.107,6.7,4.222,13.411c.055.2.141.4.212.595.084-.005.17-.005.258-.009" transform="translate(-403.343 -4.849)" fill="#0a56bb" fill-rule="evenodd"/>
+                            <path id="Path_3" data-name="Path 3" d="M480.408,33.139a10.837,10.837,0,0,1-10.462,3.137c-4.277-.9-7.4-4.537-8.147-9.3-.836-5.379,1.929-10.683,6.718-12.514,4.433-1.688,8.4-.9,11.759,2.835a4.615,4.615,0,0,0,.11-2.045c-.1-.952.3-1.219,1.157-1.1a4.263,4.263,0,0,0,.8,0c.53-.052.719.157.719.706q-.027,10.227,0,20.444c0,.549-.19.762-.731.715a3.953,3.953,0,0,0-.9,0c-.785.1-1.113-.2-1.036-1.008.061-.616.013-1.247.013-1.872m-.013-8.018c-.031-.45-.031-.911-.094-1.36a8.39,8.39,0,0,0-5.323-6.943,6.914,6.914,0,0,0-7.717,1.729,9.432,9.432,0,0,0-1.295,11.681,7.446,7.446,0,0,0,12.512.476,9.189,9.189,0,0,0,1.917-5.582" transform="translate(-396.765 -4.966)" fill="#0a56bb" fill-rule="evenodd"/>
+                            <path id="Path_4" data-name="Path 4" d="M488.6,31.234c.382-.209.4-.624.523-.955,1.919-4.975,3.836-9.948,5.688-14.946.377-1.013.866-1.5,1.943-1.3a3.12,3.12,0,0,0,.789,0c.961-.128.943.263.648,1Q492.9,28.48,487.625,41.951a2.782,2.782,0,0,1-3.058.917c-.314-.241-.05-.472.029-.7.706-1.793,1.391-3.6,2.125-5.377a2.519,2.519,0,0,0,.033-1.954c-2.444-6.516-4.839-13.044-7.258-19.567-.463-1.233-.454-1.24.911-1.24,1.789,0,1.8,0,2.43,1.709q2.677,7.347,5.352,14.7a1.454,1.454,0,0,0,.413.79" transform="translate(-391.362 -4.85)" fill="#0a56bb" fill-rule="evenodd"/>
+                            <path id="Path_5" data-name="Path 5" d="M412.779,33.886c11.284,9.928,22.569,9.573,34.064.218.016,1.648.375,3.034-1.015,4.264-3.825,3.385-7.889,6.263-13.048,7.162a18.447,18.447,0,0,1-12.854-2.513,53.687,53.687,0,0,1-5.617-4.229c-1.64-1.283-1.92-2.823-1.53-4.9" transform="translate(-411.846 1.27)" fill="#faa534" fill-rule="evenodd"/>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+              </span>
+              <span class="desktop-logo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="107.008" height="47.073" viewBox="0 0 107.008 47.073">
+                  <g id="Logo-white" transform="translate(0 6)">
+                    <g id="Group_6" data-name="Group 6" transform="translate(0 -6)">
+                      <g id="Group_5" data-name="Group 5">
+                        <g id="Group_4" data-name="Group 4">
+                          <g id="Group_3" data-name="Group 3">
+                            <path id="Path_1" data-name="Path 1" d="M429.935,7.01c8.607-.324,16.778,7.006,17.668,16.381.514,5.443-.578,10.457-4.073,14.8a17.423,17.423,0,0,1-29.436-3.336c-4.629-9.45-1.224-20.934,7.678-25.865a15.929,15.929,0,0,1,8.163-1.981m14.2,18.646a14.988,14.988,0,0,0-3.693-10.1c-4.924-5.715-12.789-6.717-18.518-2.367a16.327,16.327,0,0,0-2.083,23.6,13.462,13.462,0,0,0,18.8,1.33,15.78,15.78,0,0,0,5.493-12.459" transform="translate(-412.028 -7)" fill="#fff" fill-rule="evenodd"/>
+                            <path id="Path_2" data-name="Path 2" d="M448.188,29.73q1.883-6.418,3.759-12.838c.174-.617.416-1.224.532-1.85.157-.832.592-1.046,1.4-1.037.765.008,1.03.31,1.225.992,1.335,4.648,2.708,9.285,4.074,13.93.077.248.163.494.264.788.485-.224.469-.683.586-1.047,1.39-4.469,2.794-8.94,4.136-13.434.273-.91.633-1.386,1.621-1.2a2.279,2.279,0,0,0,.673,0c.836-.1,1.03.116.749.974-1.726,5.171-3.38,10.35-5.056,15.529-.437,1.373-.9,2.738-1.326,4.1-.222.68-.282,1.317-1.344,1.3-1.1-.016-1.06-.757-1.249-1.4-1.458-4.888-2.9-9.779-4.346-14.666-.468.088-.39.462-.468.724-1.4,4.79-2.81,9.572-4.182,14.37-.18.638-.4.951-1.124.945a1.124,1.124,0,0,1-1.272-.94q-3.173-10-6.446-19.963c-.28-.847-.107-1.016.726-1,1.835.03,1.835-.009,2.38,1.716q2.107,6.7,4.222,13.411c.055.2.141.4.212.595.084-.005.17-.005.258-.009" transform="translate(-403.343 -4.849)" fill="#fff" fill-rule="evenodd"/>
+                            <path id="Path_3" data-name="Path 3" d="M480.408,33.139a10.837,10.837,0,0,1-10.462,3.137c-4.277-.9-7.4-4.537-8.147-9.3-.836-5.379,1.929-10.683,6.718-12.514,4.433-1.688,8.4-.9,11.759,2.835a4.615,4.615,0,0,0,.11-2.045c-.1-.952.3-1.219,1.157-1.1a4.263,4.263,0,0,0,.8,0c.53-.052.719.157.719.706q-.027,10.227,0,20.444c0,.549-.19.762-.731.715a3.953,3.953,0,0,0-.9,0c-.785.1-1.113-.2-1.036-1.008.061-.616.013-1.247.013-1.872m-.013-8.018c-.031-.45-.031-.911-.094-1.36a8.39,8.39,0,0,0-5.323-6.943,6.914,6.914,0,0,0-7.717,1.729,9.432,9.432,0,0,0-1.295,11.681,7.446,7.446,0,0,0,12.512.476,9.189,9.189,0,0,0,1.917-5.582" transform="translate(-396.765 -4.966)" fill="#fff" fill-rule="evenodd"/>
+                            <path id="Path_4" data-name="Path 4" d="M488.6,31.234c.382-.209.4-.624.523-.955,1.919-4.975,3.836-9.948,5.688-14.946.377-1.013.866-1.5,1.943-1.3a3.12,3.12,0,0,0,.789,0c.961-.128.943.263.648,1Q492.9,28.48,487.625,41.951a2.782,2.782,0,0,1-3.058.917c-.314-.241-.05-.472.029-.7.706-1.793,1.391-3.6,2.125-5.377a2.519,2.519,0,0,0,.033-1.954c-2.444-6.516-4.839-13.044-7.258-19.567-.463-1.233-.454-1.24.911-1.24,1.789,0,1.8,0,2.43,1.709q2.677,7.347,5.352,14.7a1.454,1.454,0,0,0,.413.79" transform="translate(-391.362 -4.85)" fill="#fff" fill-rule="evenodd"/>
+                            <path id="Path_5" data-name="Path 5" d="M412.779,33.886c11.284,9.928,22.569,9.573,34.064.218.016,1.648.375,3.034-1.015,4.264-3.825,3.385-7.889,6.263-13.048,7.162a18.447,18.447,0,0,1-12.854-2.513,53.687,53.687,0,0,1-5.617-4.229c-1.64-1.283-1.92-2.823-1.53-4.9" transform="translate(-411.846 1.27)" fill="#faa534" fill-rule="evenodd"/>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+              </span>
+                <p>&nbsp;</p>
+            </div>
+            <div class="loading-menu">
+              <ul>
+                <li>
+                  <span class="icon">&nbsp;</span>
+                  <span>Flights</span>
+                </li>
+                <li>
+                  <span class="icon">&nbsp;</span>
+                  <span>Hotels</span>
+                </li>
+                <li>
+                  <span class="icon">&nbsp;</span>
+                  <span>Bus</span>
+                </li>
+                <li>
+                  <span class="icon">&nbsp;</span>
+                  <span>Tours</span>
+                </li>
+                <li>
+                  <span class="icon">&nbsp;</span>
+                  <span>Myanmar Visa</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="section"></div>
+          <div class="ongoing">
+              <h2 class="header-title">Ongoing Promotion</h2>
+              <small>special deals for you</small>
+              <ul>
+                <li>&nbsp;</li>
+                <li>&nbsp;</li>
+                <li>&nbsp;</li>
+              </ul>
+          </div>
+        </div>
+      </div>      
+    </div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>

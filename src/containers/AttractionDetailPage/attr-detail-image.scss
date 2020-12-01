@@ -1,0 +1,77 @@
+@import "~react-image-gallery/styles/scss/image-gallery.scss";
+
+.tour-detail {
+    scroll-behavior: smooth;
+    .image-gallery {
+        .image-gallery-content {
+            display: flex;
+            justify-content: space-between;
+            .image-gallery-slide-wrapper {
+                flex: 0 70%;
+                background: #FFFFFF;
+                border: 1px solid #D6D6D6;
+                border-radius: 5px;
+                margin-bottom: 10px;
+                .image-gallery-left-nav,
+                .image-gallery-right-nav {
+                    padding: 0 10px;
+                    .image-gallery-svg {
+                        width: 25px;
+                        height: 25px;
+                        background: rgba(0,11,38,0.40);
+                        box-shadow: 0 0 18px rgba(0,0,0,0);
+                        border-radius: 50%;
+                        stroke-width: 3;
+                    }
+                    &:hover,
+                    &:focus,
+                    &:active {
+                        .image-gallery-svg {
+                            transform: none;
+                            color: #0A56BB;
+                        }
+                    }
+                }
+                .image-gallery-swipe {
+                    .image-gallery-slides {
+                        .image-gallery-slide {
+                            .image-gallery-image {
+                                height: 450px;
+                                object-fit: cover;
+                                border-radius: 5px;
+                            }
+                        }                        
+                    }
+                }
+            }
+            .image-gallery-thumbnails-wrapper {
+                flex: 0 30%;
+                .image-gallery-thumbnails {
+                    .image-gallery-thumbnails-container {
+                        .image-gallery-thumbnail {
+                            width: 100%;
+                            border: 2px solid transparent;
+                            cursor: pointer;
+                            .image-gallery-thumbnail-inner {
+                                .image-gallery-thumbnail-image {
+                                    width: 100%;
+                                    height: 85px;
+                                    overflow: hidden;
+                                    object-fit: cover;
+                                    border-radius: 5px;
+                                }
+                            }
+                            &:hover,
+                            &:focus,
+                            &:active,
+                            &.active {
+                                border: 2px solid #0A56BB;
+                                border-radius: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

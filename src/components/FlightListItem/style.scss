@@ -1,0 +1,122 @@
+@import '../../styles/main.scss';
+
+.accordion-detail {
+    &.flight-detail {
+        .flight-detail-item {
+            display: $display-flex;
+            .col-info {
+                flex: 0 25%;
+                display: $display-flex;
+                img {
+                    width: 18px;
+                    margin-right: 10px;
+                }
+                .detail-info {
+                    font-size: $font-size-15;
+                    font-weight: $font-weight;
+                    color: #000000;
+                    div {
+                        &:first-child {
+                            line-height: 20px;
+                        }
+                    }
+                    .airline-code {
+                        color: #606060;
+                        font-size: $font-size-13;
+                        font-weight: normal;
+                        line-height: 20px;
+                    }
+                }
+            }
+            .col-route {
+                flex: 0 42%;
+                margin: 0 15px;
+                display: $display-flex;
+                .scheldule {
+                    text-align: $text-right;
+                    display: $display-flex;
+                    justify-content: $justify-content-between;
+                    flex-direction: column;
+                    .time {
+                        color: $dark-color;
+                        font-size: $font-size-17;
+                        font-weight: $font-weight;
+                    }
+                    .date {
+                        font-size: $font-size-13;
+                        color: #FD8F24;
+                        font-style: italic;
+                        white-space: nowrap;
+                        line-height: 15px;
+                    }
+                }
+                .circle {
+                    background: #1E7DFF;
+                    border: 3px solid #FFFFFF;
+                    height: 15px;
+                    width: 15px;
+                    border-radius: 50%;
+                    margin: 0 10px;
+                }
+                .vertical-line {
+                    background: #CCCCCC;
+                    width: 1px;
+                    margin: 0 auto;
+                    height: 60px;            
+                }
+                .duration {
+                    display: flex;
+                    justify-content: space-between;
+                    flex-direction: column;
+                    .route {
+                        font-size: 13px;
+                        color: #202020;
+                    }
+                    .route-duration {
+                        background-color: #1E7DFF;
+                        color: #FFFFFF;
+                        padding: 3px 10px;
+                        border-radius: 9px;
+                        font-size: 11px;
+                        font-weight: bold;
+                        align-self: flex-start;
+                    }
+                } 
+            }
+            .col-facilities {
+                flex: 0 33%;
+                color: #606060;
+                font-size: 13px;
+                img {
+                    width: 17px;
+                    max-height: 17px;
+                    margin-right: 5px;
+                }
+            }
+        }
+    } 
+}
+.transist-block {
+    display: $display-flex;
+    justify-content: flex-end;
+    .transist-info {    
+        background: #F8F8F8;
+        border: 1px solid #D6D6D6;    
+        width: 75%;
+        margin-right: 15px;
+        .heading {
+            font-size: $font-size-15;
+            border-bottom: 1px dashed #D6D6D6;
+            font-weight: $font-weight;
+            color: #202020;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+        p {        
+            color: $primary-color;
+            font-size: $font-size-13;
+            padding: 0 10px 10px;
+            line-height: 20px;
+        }
+    }
+}

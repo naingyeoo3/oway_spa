@@ -1,0 +1,549 @@
+@import '../styles/main.scss';
+
+.checkout-container {
+    .col-left {
+        flex: 0 66%;
+        .heading-checkout {
+            font-size: 17px;
+            margin: 12px 0;
+        }        
+        .oway-login {
+            display: $display-flex;
+            justify-content: $justify-content-between;
+            align-items: $align-items-center;
+            padding: 7px;
+            font-weight: $font-weight;
+            .info {
+                display: $display-flex;
+                align-items: $align-items-center;
+                img {
+                    margin-right: 26px;
+                }
+                .text {
+                    font-size: $font-size-13;
+                    color: #606060;
+                    margin-top: 3px;
+                }
+            }
+            .button {
+                flex: 0 29%;
+                .btn-blue {
+                    background: #2681FF;
+                    border: 1px solid #1365D5;                    
+                    font-size: $font-size-15;
+                    color: $white-color;
+                    border-radius: $border-radius-5;
+                    height: 38px;
+                    cursor: $cursor-pointer;
+                }
+            }
+        }
+        .passenger-alert {
+            background: #F2F9FF;
+            border: 1px solid #85AED1;
+            font-size: $font-size-14;
+            font-weight: $font-weight;
+            color: $primary-color;            
+            padding: 10px 15px;
+            border-radius: $border-radius-5;
+            margin-bottom: 10px;
+            display: $display-flex;
+            align-items: $align-items-center;
+            img {
+                margin-right: 10px;
+            }
+        }
+        .btn-orange {
+            margin-top: 10px;
+        }
+    }
+    .col-right {
+        flex: 0 32.5%;
+    }
+    .booking-detail {
+        display: $display-flex;
+        justify-content: $justify-content-between;
+        align-items: $align-items-center;
+        font-weight: $font-weight;
+        color: $dark-color;
+        margin-bottom: 20px;
+        .info-detail {
+            flex: 0 79%;
+            .name {
+                font-size: $font-size-20;
+                display: $display-flex;
+                align-items: $align-items-center;
+                .route {
+                    margin: 0 7px;
+                }
+                .star-rating {
+                    margin-left: 7px;
+                    display: $display-flex;
+                    img {
+                        margin-right: 3px;
+                        &:last-child {
+                            margin-right: $zero;
+                        }
+                    }
+                }
+            }
+            .info {
+                font-size: $font-size-15;
+                margin-top: 2px;
+            }
+        }
+        .button-change {
+            //flex: 0 16%;
+            button {
+                background: $white-color;
+                border: $none;
+                border-radius: $border-radius-5;
+                color: #2681FF;
+                font-weight: $font-weight;
+                cursor: $cursor-pointer;
+                padding: 5px 10px;
+                transition: $transition-style-alt;
+                img {
+                    margin-right: 10px;
+                }
+                &:hover,
+                &:focus,
+                &:active {
+                    box-shadow: 0 0 10px rgba(0,0,0,0.16);
+                    outline: $none;
+                }
+            }
+        }
+    }
+}
+
+.form-container {
+    .card {
+        &.form-card {
+            padding: 20px 15px 0;
+            .form-group {
+                display: $display-flex;
+                flex-wrap: $flex-wrap;
+                font-size: $font-size-15;
+                font-weight: $font-weight;
+                align-items: $align-items-center;
+                .input-card {
+                    flex: 0 32%;
+                    padding: 10px;
+                    position: $position-relative;
+                    margin-bottom: 20px;
+                    margin-right: 2%;
+                    height: 58px;
+                    &:nth-child(3),
+                    &:nth-child(6) {
+                        margin-right: 0;
+                    }
+                    .two-column {
+                        display: $display-flex;
+                    }
+                    label {
+                        display: $display-block;
+                        font-size: $font-size-11;
+                        color: #999999;
+                    }
+                    .ant-input {
+                        border: $none;
+                        padding: $zero;
+                        height: 20px;
+                        color: #606060;
+                        font-weight: $font-weight;
+                        font-size: $font-size-15;
+                        &::-webkit-input-placeholder {
+                            color: #CCCCCC;
+                            font-weight: $font-weight-normal;
+                        }
+                        &:-ms-input-placeholder {
+                            color: #CCCCCC;
+                            font-weight: $font-weight-normal;
+                        }
+                        &::placeholder {
+                            color: #CCCCCC;
+                            font-weight: $font-weight-normal;
+                        }
+                        &:hover,
+                        &:focus,
+                        &:active {
+                            box-shadow: $none;
+                        }
+                    }
+                    .ant-select {
+                        width: 42%;
+                        color: #202020;
+                        font-size: $font-size-15;
+                        .ant-select-selection {
+                            &.ant-select-selection--single {
+                                height: 20px;
+                                border: $none;
+                                .ant-select-selection__rendered {
+                                    margin-left: $zero;
+                                    line-height: 20px;
+                                    .ant-select-selection-selected-value {
+                                        padding-right: $zero;
+                                    }
+                                }
+                                .ant-select-arrow {
+                                    right: $zero;
+                                    top: 11px;
+                                    .ant-select-arrow-icon {
+                                        svg {
+                                            stroke-width: 10%;
+                                            stroke: #1E7DFF;
+                                            fill: #1E7DFF;
+                                        }
+                                    }
+                                }
+                                &:hover,
+                                &:focus,
+                                &:active {
+                                    box-shadow: $none;
+                                }
+                            }
+                        }
+                        &.ant-select-auto-complete {
+                            .ant-select-selection__placeholder {
+                                margin-left: $zero;
+                                margin-right: $zero;
+                            }
+                            .ant-input {
+                                color: #202020;
+                            }
+                        }
+                    }
+                    .DateInput_input {
+                        height: 20px;
+                        color: #606060;
+                        font-weight: $font-weight;
+                        padding: $zero;
+                        font-size: $font-size-15;
+                        &::-webkit-input-placeholder {
+                            color: #CCCCCC;
+                            font-weight: $font-weight-normal;
+                        }
+                        &:-ms-input-placeholder {
+                            color: #CCCCCC;
+                            font-weight: $font-weight-normal;
+                        }
+                        &::placeholder {
+                            color: #CCCCCC;
+                            font-weight: $font-weight-normal;
+                        }
+                        &.DateInput_input__focused {
+                            border-bottom: $none;
+                        }
+                    }
+                    .SingleDatePicker_picker {
+                        top: 34px !important;
+                        z-index: 3;
+                    }
+                    .info {
+                        position: $position-absolute;
+                        right: 3px;
+                        top: 3px;
+                    }
+                    &.select-card {
+                        padding: 10px 10px 10px 0;
+                        label,
+                        .ant-select,
+                        .ant-input,
+                        .DateInput_input {
+                            padding-left: 10px;
+                        }
+                        &.mobile-card {
+                            .ant-input {
+                                padding-left: $zero;
+                            }
+                        }
+                    }
+                    &.nrc-card {
+                        flex: 0 45%;
+                        .division-code {
+                            width: 28%;
+                        }
+                        .township-code {
+                            width: 60%;
+                        }
+                        .nrc-code {
+                            width: 26%;
+                        }
+                        .ant-input {
+                            width: 40%;
+                        }
+                    }
+                }
+                .check-card {
+                    border: $none;
+                    padding: $zero;
+                    .ant-checkbox-wrapper {
+                        color: #202020;
+                        font-size: $font-size-15;
+                        .ant-checkbox {
+                            .ant-checkbox-inner {
+                                border: 1.5px solid #1E7DFF;
+                            }
+                            &.ant-checkbox-checked {
+                                .ant-checkbox-inner {
+                                    border: 1.5px solid #1E7DFF;
+                                    background: #1E7DFF;
+                                }
+                            }
+                            & + span {
+                                padding-left: 11px;
+                                padding-right: $zero;
+                            }
+                        }
+                    }
+                }                
+                .error-text {
+                    font-size: $font-size-11;
+                    color: #FF0000;
+                    position: $position-absolute;
+                    bottom: -16px;
+                    left: 10px;
+                }
+                &.collapsed-title {
+                    .check-card {
+                        margin-bottom: 15px;
+                        margin-right: $zero;
+                        display: $display-flex;
+                        justify-content: $justify-content-between;
+                        align-items: $align-items-center;
+                        flex: $flex-1;
+                        .ant-checkbox-wrapper {
+                            .ant-checkbox {
+                                & + span {
+                                    padding-left: 14px;
+                                    font-size: $font-size-17;
+                                }
+                            }
+                        }
+                        .badge-complete {
+                            font-size: $font-size-13;
+                            font-weight: $font-weight;
+                            color: $white-color;
+                            box-shadow: 0 3px 5px rgba(0,0,0,0.16);
+                            border-radius: 107px;
+                            padding: 1px 13px;
+                            background: rgba(30,124,255,1);
+                            background: -moz-linear-gradient(left, rgba(30,124,255,1) 0%, rgba(10,87,187,1) 100%);
+                            background: -webkit-gradient(left top, right top, color-stop(0%, rgba(30,124,255,1)), color-stop(100%, rgba(10,87,187,1)));
+                            background: -webkit-linear-gradient(left, rgba(30,124,255,1) 0%, rgba(10,87,187,1) 100%);
+                            background: -o-linear-gradient(left, rgba(30,124,255,1) 0%, rgba(10,87,187,1) 100%);
+                            background: -ms-linear-gradient(left, rgba(30,124,255,1) 0%, rgba(10,87,187,1) 100%);
+                            background: linear-gradient(to right, rgba(30,124,255,1) 0%, rgba(10,87,187,1) 100%);
+                            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e7cff', endColorstr='#0a57bb', GradientType=1 );
+                        }
+                    }
+                }
+            }
+            &.passenger-card {
+                padding: 13px 15px 0;
+            }
+        }
+        &.plus-card {            
+            font-size: $font-size-17;
+            font-weight: $font-weight;
+            color: #000000;
+            .form-collapsed {
+                display: $display-flex;
+                align-items: $align-items-center;
+                padding: 13px 15px;
+                cursor: $cursor-pointer;
+                img {
+                    margin-right: 16px;
+                    height: 13px;
+                }
+                .heading {
+                    font-size: 17px;
+                }
+            }            
+        }
+    }
+    
+}
+.form-select {
+    &.ant-select-dropdown--single {
+        .ant-select-dropdown-menu {
+            height: auto;
+            .ant-select-dropdown-menu-item {
+                padding: 5px 10px;
+            }
+        }
+    }
+}
+/* Mobile Dial Code Dropdown */
+.form-select {
+    &.dialcode-select {
+        width: 400px !important;
+    }
+}
+/* NRC Dropdown */
+.form-select {
+    &.division-select {
+        width: 70px !important;
+    }
+}    
+.form-select {
+    &.township-select {
+        width: 120px !important;    
+    }
+}
+.form-select {
+    &.nrctype-select {
+        width: 55px !important;
+    }
+}
+.listing-container-01 {
+    &.checkout-listing {
+        position: $position-relative;
+        .card {
+            cursor: inherit;
+            &:hover,
+            &:focus,
+            &:active {
+                box-shadow: $none;
+            }
+        }
+        .tag {
+            position: $position-absolute;
+            top: -10px;
+            left: 15px;
+            background: #1E7DFF;
+            border-radius: $border-radius-3;
+            color: $white-color;
+            font-size: $font-size-11;
+            font-weight: $font-weight;
+            padding: 2px 9px;
+        }
+        .listing-item-01 {
+            &.checkout-flight-item {
+                .col-info {
+                    .info-block {
+                        padding: $zero;
+                        .logo,
+                        .route {
+                            flex: $flex-1;
+                            padding: 20px 15px;
+                        }
+                        .logo {                            
+                            margin-right: $zero;                            
+                            border-right: 1px dashed #D6D6D6;
+                            font-size: $font-size-15;
+                            font-weight: $font-weight;
+                            line-height: 20px;
+                            .date {                            
+                                color: #202020;
+                            }
+                            .heading {
+                                display: $display-flex;
+                                align-items: $align-items-center;
+                                span {
+                                    margin-left: 10px;
+                                }
+                            }
+                            .class-type {
+                                color: #606060;
+                            }
+                        }
+                        .route {
+                            justify-content: $justify-content-end;                     
+                        }
+                    }
+                }
+            }
+            &.checkout-bus-item {
+                .col-info {
+                    .info-block {
+                        padding: $zero;
+                        .logo,
+                        .route {
+                            flex: $flex-1;
+                            padding: 20px 15px;
+                        }
+                        .logo {                            
+                            margin-right: $zero;                            
+                            border-right: 1px dashed #D6D6D6;
+                        }
+                        .route {
+                            justify-content: $justify-content-end;                     
+                        }
+                    }
+                }
+            }
+        }
+        &.return {
+            margin-top: 15px;
+        }
+    }    
+}
+// .passenger-content{
+//     display: flex;
+//     .flight-detail{
+//         flex:0 64%;
+//         padding:10px;
+//         .oway-login{
+//           display: flex;
+//           padding: 10px;
+//           .login-text{
+//               flex:0 74%;
+//               h3{
+//                   color: #1890ff;
+//               }
+//               h4{
+//                   color: gray;
+//               }
+//           }
+//           .login-button {
+//               flex:0 24%;  
+//           }
+//         }
+//         .contact-info{
+//             .contact-info-group {
+//                 display: flex;
+//                 padding: 10px;
+//                 .contact-info-input {
+//                     flex:0 24%;
+//                     margin: 5px;
+//                 }
+//                 .contact-info-select{
+//                     flex : 0 49%;
+//                     margin : 5px;
+//                 }
+
+//             }
+//         }
+//         .traveller-info{
+//             margin-top: 10px;
+//             .traveller-info-header {
+//                 display: flex;
+//                 margin: 5px;
+//                 justify-content: space-between;
+//             }
+//             .traveller-info-row {
+//                 display: flex;
+//                 padding: 5px;
+//                 .traveller-info-input {
+//                     flex: 0 33%;
+//                     margin: 5px;
+//                 }
+//             }
+//             .traveller-info-uncollapsed {
+//                 padding: 10px;
+//                 cursor: pointer;
+//                 font-weight: bold;
+//                 span{
+//                     font-size: large;
+//                 }
+//             }
+//         }
+//         .pay-button {
+//             padding: 5px;
+//             text-align: center;
+//         }
+//     }
+    
+// }

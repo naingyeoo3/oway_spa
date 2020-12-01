@@ -1,0 +1,125 @@
+@import '../../styles/main.scss';
+
+.change-search {
+    display: $display-flex;
+    margin-top: 10px;
+    .change-search-input {
+        flex: 0 21%;
+        margin-right: 10px;
+        position: $position-relative;
+        .ant-select-auto-complete {
+            &.ant-select {
+                width: 100%;
+                .ant-input {
+                    background: #F8F8F8;
+                    border-radius: $border-radius-5;
+                    border: 1px solid #D6D6D6;
+                    height: 40px;
+                    padding: 0 10px;
+                    color: $dark-color;
+                    font-size: $font-size-15;
+                    font-weight: $font-weight;
+                    div {
+                        color: red;
+                    }
+                }
+                .ant-select-selection__clear {
+                    top: 21px;
+                    background: #F8F8F8;
+                }
+            }
+        }
+        &.one-input {
+            flex: 0 42.9%;
+        }
+        .listing-error {
+            color: #ff0000;
+            border-top: 2px solid #ff4444;
+            font-size: 11px;
+            position: $position-absolute;
+            bottom: -15px;
+            z-index: 1;
+            left: $left-0;
+            right: $right-0;
+            font-weight: $font-weight;
+        }
+    }
+    .swap-content {
+        position: $position-relative;
+        .swap-button {
+            background: url('../../assests/images/svg/btn-swap.svg');
+            width: 28px;
+            height: 28px;
+            z-index: 2;
+            position: $position-absolute;
+            top: 5px;
+            left: -20px;
+        }
+    }    
+    .change-search-date-input {
+        flex: 0 42%;
+        .DateRangePicker,
+        .SingleDatePicker {
+            .DateRangePickerInput,
+            .SingleDatePickerInput {
+                align-items: flex-start;
+                margin-right: 10px;
+                .DateInput {
+                    margin-right: 10px;
+                    .DateInput_input {
+                        background: #F8F8F8;
+                        border-radius: $border-radius-5;
+                        border: 1px solid #D6D6D6;
+                        height: 40px !important;
+                        padding: 0 10px;
+                        color: $dark-color;
+                        font-size: $font-size-15;
+                        font-weight: $font-weight;                        
+                    }
+                }
+                .DateRangePicker_picker,
+                .SingleDatePicker_picker {
+                    top: 44px !important;
+                    z-index: 2;
+                }
+                .DateRangePickerInput_arrow {
+                    display: $display-none;
+                }
+            }
+        }
+        .single-date-picker {
+            display: $display-flex;
+            justify-content: flex-start;
+            .SingleDatePicker {
+                &.SingleDatePicker_1 {
+                    width: 100%;
+                    margin-right: 10px;
+                    .SingleDatePickerInput,
+                    .DateInput {
+                        width: 100%;
+                    }
+                }                
+            }
+            .disabled-input {
+                width: 100%;
+                margin-right: 20px;
+                .ant-input-disabled {
+                    background: #F8F8F8;
+                    border-radius: $border-radius-5;
+                    border: 1px solid #D6D6D6;
+                    height: 40px !important;
+                    padding: 0 10px;
+                    color: rgba($color: #404044, $alpha: 0.33);
+                    font-size: $font-size-15;
+                    font-weight: $font-weight;                        
+                }
+            }
+        }        
+    }
+    .change-search-button {
+        flex: 0 16%;
+    }
+    .none {
+        display: $display-none;
+    }
+}

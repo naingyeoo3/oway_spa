@@ -1,0 +1,190 @@
+@import '../../styles/main.scss';
+
+.search-type {
+    display: $display-flex;    
+    .search-type-dropdown {
+        margin-right: 10px;
+        &.trip-type {
+            flex: 0 12%;
+        }
+        &.class-type {
+            flex: 0 18%;
+        }
+        &.traveller-type {
+            flex: 0 18%;
+        }
+        &.passenger-type {
+            flex: 0 12%;
+        }
+        & > button {
+            background: $primary-color;
+            border: $border-none;
+            color: $white-color;
+            font-weight: $font-weight;
+            font-size: $font-size-13;
+            text-transform: $text-transform-uppercase;
+            border-radius: $border-radius-5;
+            padding: 5px 10px;
+            cursor: $cursor-pointer;
+            display: $display-flex;
+            align-items: $align-items-center;
+            justify-content: $justify-content-between;
+            width: $width-100;
+            white-space: nowrap;
+            box-shadow: 0 8px 7px -6px #0a56bb;
+            img {
+                margin-left: 5px;
+            }
+            &:hover,
+            &:focus,
+            &:active {
+                outline: none;
+                background: #1E7DFF;
+            }
+            .traveller {
+                span {
+                    margin-right: 5px;
+                    &:last-child {
+                        margin-right: $margin-right-0;
+                    }
+                    span {
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+        &:last-child {
+            margin-right: $margin-right-0;
+        }
+        ul {
+            position: $position-absolute;
+            z-index: 3;
+            background: $white-color;
+            border: 1px solid #D2D2D2;
+            box-shadow: 0 0 6px rgba(0,0,0,0.16);
+            border-radius: $border-radius-5;
+            width: 200px;
+            li {
+                border-bottom: 1px solid #D2D2D2;
+                a {
+                    padding: 10px;                
+                    font-size: $font-size-13;
+                    font-weight: $font-weight;                    
+                    color: #333333;
+                    display: $display-block;
+                    &:hover,
+                    &:focus,
+                    &:active {
+                        background: #F2F9FF;
+                    }
+                }
+                &:first-child {
+                    a {
+                        &:hover,
+                        &:focus,
+                        &:active {
+                            border-radius: 5px 5px 0 0;
+                        }
+                    }
+                }
+                &:last-child {
+                    border-bottom: $border-bottom-none;
+                    a {
+                        &:hover,
+                        &:focus,
+                        &:active {
+                            border-radius: 0 0 5px 5px;
+                        }
+                    }
+                }
+            }
+            &.passenger-list {
+                &.hotel {
+                    width: 240px;
+                }
+                .close-icon {
+                    text-align: $text-right;
+                    button {
+                        border: $border-none;
+                        background: $background-none;
+                        cursor: $cursor-pointer;
+                        padding: 5px 13px 5px 0;
+                        text-decoration: underline;
+                        font-weight: $font-weight;
+                        &:hover,
+                        &:focus,
+                        &:active {
+                            outline: none;
+                        }
+                    }
+                }                
+                .passenger-list-item {
+                    display: $display-flex;
+                    justify-content: $justify-content-between;
+                    align-items: $align-items-center;
+                    padding: 7px 10px;
+                    border-bottom: $border-bottom-none;
+                    div {
+                        span {
+                            font-size: $font-size-13;
+                            font-weight: $font-weight;
+                            color: #333333;
+                            &.small-text {
+                                display: $display-block;
+                                font-size: 11px;
+                                line-height: 10px;
+                            }
+                        }
+                        button {
+                            border-radius: 50%;
+                            padding: $padding-0;
+                            width: 20px;
+                            height: 20px;
+                            border: $border-none;
+                            font-weight: $font-weight;
+                            cursor: $cursor-pointer;
+                            line-height: 19px;
+                            &:focus {
+                                outline: none;
+                            }
+                            span {
+                                font-size: 20px;
+                            }
+                        }
+                        .count {
+                            //margin: 0 15px;
+                            width: 35px;
+                            text-align: center;
+                        }
+                    }
+                    .select-count {
+                        display: $display-flex;
+                        align-items: $align-items-center;
+                    }
+                }
+                .age-title {
+                    color: #333333;
+                    text-align: $text-center;
+                    display: $display-block;
+                }
+                .age-selector {
+                    color: #333333;
+                    text-align: $text-center;
+                    margin: 5px 0;
+                    display: $display-flex;
+                    flex-wrap: wrap;
+                    padding: 0 10px;
+                    .sub-age {
+                        flex: 0 33.33%;
+                        padding: 5px;
+                        select {
+                            width: 100%;
+                            height: 23px;
+                            border-radius: 2px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

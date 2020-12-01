@@ -1,0 +1,226 @@
+// @import '../containers/App/app.scss';
+.subscribe-block {
+    // background: #D6E6F6;
+    padding: 30px 0;
+    .subscribe-sub-block { 
+        box-shadow: 0px 0px 5px #ccc;
+        border-radius: 10px;
+        padding:15px;
+        z-index: 2;
+        position: relative;
+        background: linear-gradient(0deg, rgba(241,241,241,1) 0%, rgba(255,255,255,1) 50%);       
+        display: flex;
+        align-items: center;
+        margin-top:-106px;
+        .send-email{
+            width: 48%;
+            position: relative;
+            input { 
+                border: 1px solid #D6D6D6;
+                border-radius: 233px;
+                background: #F8F8F8;
+                height: 50px;
+                padding: 0 100px 0 25px;
+                color: #535353;
+                font-weight: 500;
+                width:100%;
+                outline: none;
+                &::placeholder {
+                    color: #535353;
+                }
+                &:focus {
+                    box-shadow: none;
+                }
+            }
+            button {                    
+                border-radius: 20px;
+                position: absolute;
+                top: 5px;
+                right: 6px;
+               
+                i {
+                    display: none;
+                }
+                &[ant-click-animating-without-extra-node='true'] {
+                    &:after,
+                    .ant-click-animating-node {
+                        --antd-wave-shadow-color: #faa5348a;
+                    }
+                }
+                &:hover{
+                    background:#f59120;
+                }
+            }
+            .newsletter-sms{
+                color: #002955;
+                display: inline-block;
+                width: 100%;
+                margin-top: 10px;
+                padding: 8px;
+                position: absolute;
+                left: 0;
+                top: 47px;
+                border-radius: 5px;
+                text-align:left;
+            }
+            .newsletter-danger{
+                border: 1px solid #F29D9C;
+                color: #630C0C;
+                background: #FFF5F4 url(../assests/images/svg/mail-icon.svg) no-repeat ;
+                display: inline-block;
+                width: 100%;
+                margin-top: 10px;
+                padding: 8px 8px 8px 36px;
+                position: absolute;
+                left: 0;
+                top: 47px;
+                border-radius: 5px;
+                background-position: 10px;
+                text-align:left;
+
+            }
+            .newsletter-success{
+                border: 1px solid #5ABB7A;
+                color: #002955;
+                background: #E0F1DA url(../assests/images/svg/correct-icon.svg) no-repeat ;
+                display: inline-block;
+                width: 100%;
+                margin-top: 10px;
+                padding: 8px 8px 8px 36px;
+                position: absolute;
+                left: 0;
+                top: 47px;
+                border-radius: 5px;
+                background-position: 10px;
+                text-align:left;
+            }
+            .no-display{
+                display:none;
+            }
+            .subscribe-loading{
+                text-align: left;
+                display: inline-block;
+                width: 100%;
+                img{
+                    height: 84px;
+                    margin-top: -31px;
+                    margin-bottom: -30px;
+                }
+            }
+        }
+        div {
+            width: 33%;
+            &:first-child {
+                width: 18%;
+                text-align: center;
+                img{
+                    width:130px;
+                }                
+            }
+           
+            h3 {
+                font-size: 24px;
+                font-weight: 800;
+                margin: 0 0 10px 0;
+                color: #002955;
+            }
+            p {
+                font-size: 15px;
+                font-weight: 500;
+                color: #707070;
+                margin: 0;
+                width:80%;
+                display: inline-block;
+            }
+        }        
+    }
+    &.bg-color {
+        background: #F2F5F9;
+    }     
+}
+.subscribe-mobile {
+    display: none;
+}
+
+@media screen and (max-width: 991px) {
+
+    .subscribe-block {
+        background: #D6E6F6;
+        padding: 0;
+        .subscribe-sub-block {
+            display: block;
+            box-shadow: none;
+            background:none;
+            margin:0;
+            
+            div {
+                width: 100%;
+                text-align: center;
+                margin: 13px 0;
+                &:first-child{
+                    width:100%;
+                    text-align: center;
+                    img{
+                        width:100px;
+                    }
+                }
+                &:last-child {
+                    width: 100%;
+                    margin: 0;
+                    button {
+                        padding: 0 25px;
+                        font-size: 0;
+                        background:#faa534 url(../assests/images/svg/enter-icon.svg) no-repeat center center;
+                        i {
+                            display: block;
+                            margin-left: 0;
+                        }
+                        &:hover{
+                            background:#f59120 url(../assests/images/svg/enter-icon.svg) no-repeat center center;
+                        }
+                       
+                    }
+                }
+                h3{
+                    font-size: 20px;
+                }
+                p{
+                    font-size:13px ;
+                    width:100%;
+                }
+               
+            }
+            .send-email {
+                .newsletter-sms{
+                    position: relative;
+                    top:0;
+                }
+                .newsletter-danger{
+                    position: relative;
+                    top:0; 
+                }
+                .newsletter-success{
+                    position: relative;
+                    top:0; 
+                }
+                input{
+                    padding:0 70px 0 25px;
+                }
+            }
+        }
+    }
+    .subscribe-mobile {        
+        display: flex;
+        justify-content: center;
+        div {
+            padding: 0 0 0 15px;
+            &:last-child {
+                padding: 0 15px;
+                img {
+                    display: block;
+                    margin-bottom: 7px;
+                }                
+            }
+        }
+    }
+}

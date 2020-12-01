@@ -1,0 +1,37 @@
+@import '../styles/main.scss';
+
+.popular-airline {
+    border-top: $border-width-1 $border-style-dashed $border-color-grey;
+    border-bottom: $border-width-1 $border-style-dashed $border-color-grey;
+    background: $white-color;
+    .airline-block {
+        display: $display-flex;
+        justify-content: $justify-content-between;
+        .col-title {
+            flex: $flex-1;
+            padding: 70px 80px 40px 0;
+            .header-title {
+                text-align: $text-right;
+            }
+        }    
+        .col-image {
+            flex: $flex-1;
+            padding: $main-padding;
+            border-right: $border-width-1 $border-style-dashed $border-color-grey;
+            margin-right: 50px;
+            h3 {
+                color: $gray-color;
+                font-size: $font-size-18;
+                margin: $margin-0;
+            }
+            img {            
+                margin: 15px 21px 0 0;
+            }
+            &:last-child {
+                margin-right: $margin-right-0;
+                border-right: $border-right-none;
+            }
+        }
+    }    
+}
+

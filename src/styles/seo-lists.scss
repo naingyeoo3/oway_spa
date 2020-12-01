@@ -1,0 +1,48 @@
+@import './main.scss';
+
+.seo-list {
+    background: #ECECEC url('../assests/images/seobg.jpg') no-repeat bottom center;    
+    padding: 105px 0 20px;
+    margin-top:-106px;
+    .disabled {
+        display: $display-none;
+    }
+    h2 {
+        color: $blue-dark-color;
+        font-size: $font-size-17;
+        margin-bottom: 5px;
+        font-weight: $font-weight;
+        letter-spacing: 1px;
+    }
+    ul {
+        li {
+            span {
+                color: $gray-dark-color;
+                font-size: $font-size-13;
+                line-height: 24px;
+                font-family: $font-lato;
+            }
+        }
+    }
+    .seo-title {
+        margin-bottom: 30px;
+        line-height: 20px;
+        h2 {
+            text-transform: uppercase;
+            margin: 0;
+            color: $blue-dark-color;
+            font-size: 25px;
+            font-weight: $font-weight;
+            letter-spacing: 2px;
+        }
+        p {
+            color: $gray-dark-color;
+            font-size: 15px;
+            letter-spacing: 0.5px;
+            margin-top: 3px;
+            font-weight: $font-weight;
+            color:$gray-color
+            
+        }
+    }
+}

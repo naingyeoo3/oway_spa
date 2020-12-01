@@ -1,0 +1,54 @@
+@import '../../styles/main.scss';
+
+.listing-container {
+    &.tour-checkout-container {
+        .card {
+            cursor: inherit;
+            &:hover,
+            &:focus,
+            &:active {
+                box-shadow: $none;
+            }
+        }
+        .listing-item {
+            .col-info {
+                .heading-block {
+                    margin-bottom: 10px;
+                }
+                .location {
+                    margin: 0 0 10px 0;
+                }
+                .travel-time {
+                    margin-top: 10px;
+                    font-size: $font-size-15;
+                    color: #616161;
+                    font-weight: $font-weight;
+                    span {
+                        color: $dark-color;
+                        margin-left: 14px;
+                    }
+                }
+            }
+        }
+        .trip-type {
+            display: $display-flex;
+            align-items: $align-items-center;
+            padding: 15px 10px;            
+            .title {
+                flex: 0 15%;
+                .heading {
+                    color: #606060;
+                }
+            }
+            .feature {
+                display: $display-flex;
+                img {
+                    margin-right: 10px;
+                    &:last-child {
+                        margin-right: $zero;
+                    }
+                }
+            }
+        }
+    }   
+}

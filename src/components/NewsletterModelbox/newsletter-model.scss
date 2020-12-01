@@ -1,0 +1,131 @@
+@import '../../styles/main.scss';
+
+.header-newsletter-model{
+    display:inline-block;
+    .newsletter-menu{
+        background: url(../../assests/images/svg/newsletter.svg) no-repeat left top;
+        padding: 3px 0px 3px 27px;
+    }
+   
+}
+.newsletter-modal{
+    .ant-modal-content{
+        background:#D6E6F6;
+        border-radius: 20px;
+        .ant-modal-body{
+            padding:0 10px; 
+        }
+        
+        .subscribe-block{
+            padding:0;
+            background:none;
+            .subscribe-sub-block{
+                margin-top:0px;
+                background:none;
+                box-shadow: none;;
+                display:block;
+                text-align: center;
+                div{
+                    width:100%;
+                    h3{
+                        font-size:25px;
+                    }
+                    p{
+                        margin-bottom: 20px;
+                    }
+                    
+                }
+                &:first-child{
+                    width:100%;
+                    img{
+                        width: 150px;
+                        margin-top: -65px;
+                    }
+                }
+                button {
+                    padding: 0 25px;
+                    font-size: 0;
+                    background:#faa534 url(../../assests/images/svg/enter-icon.svg) no-repeat center center;
+                    i {
+                        display: block;
+                        margin-left: 0;
+                    }
+                   
+                }
+                
+                .send-email {
+                    .newsletter-sms{
+                        position: relative;
+                        top:0;
+                    }
+                    .newsletter-danger{
+                        position: relative;
+                        top:0; 
+                    }
+                    .newsletter-success{
+                        position: relative;
+                        top:0; 
+                    }
+                    input{
+                        padding:0 70px 0 25px;
+                    }
+                    .subscribe-loading{
+                        img{
+                            margin-bottom: -30px;
+                            width: 97px !important;
+                            margin-top: -37px !important;
+                        }
+                    }
+                }
+                
+            }
+        }
+        .ant-modal-footer{
+            text-align: center;
+            border:none;
+            padding-bottom: 30px;
+           
+            a{
+              
+                color:#002955;
+                text-decoration: underline;
+            }
+        }
+    }
+   
+}
+@media screen and (max-width: 991px) {
+    .header-newsletter-model{
+        .newsletter-menu{
+            background:  url(../../assests/images/svg/m_newsletter.svg) no-repeat;
+            background-size: 30px;
+            background-position: 3px 5px;
+            padding: 3px 10px 3px 39px;
+        }
+       
+    }
+    .newsletter-modal{
+        .ant-modal-content{
+            .ant-modal-body{
+                padding:0px; 
+            }
+            .ant-modal-footer{
+                display:none;
+            }
+            .subscribe-block{
+                padding-bottom: 30px;
+                .subscribe-sub-block{
+                    padding:0;
+                    div{
+                        h3{
+                            font-size: 20px;
+                        }
+                        p{
+                            margin-bottom:0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

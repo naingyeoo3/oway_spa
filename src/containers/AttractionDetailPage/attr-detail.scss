@@ -1,0 +1,286 @@
+@import '../../styles/main.scss';
+
+.tour-detail {
+    .detail-card {
+        &.card {
+            padding: $padding-0;
+            .info-block {
+                .col-info {
+                    .heading-block {
+                        .heading {
+                            line-height: 25px;
+                            font-size: 21px;
+                        }
+                        .noti {
+                            margin-top: 10px;
+                            .badge {
+                                margin-right: 5px;
+                                &:last-child {
+                                    margin-right: $margin-right-0;
+                                }
+                            }
+                        }
+                    }                
+                }
+                .col-price {
+                    display: $display-flex;
+                    justify-content: flex-end;
+                    div {
+                        align-self: center;
+                    }
+                }
+            }
+        }        
+    }
+    .detail-section {
+        display: $display-flex;
+        justify-content: $justify-content-between;
+        color: #404040;
+        font-size: 15px;
+        .detail-block {
+            flex: 0 69.5%;
+            .overview {
+                .title {
+                    display: $display-flex;
+                    justify-content: $justify-content-between;
+                    .noti {
+                        .badge {
+                            margin-right: 5px;
+                            &:last-child {
+                                margin-right: $margin-right-0;
+                            }
+                        }
+                    }
+                }        
+                .description {
+                    font-size: $font-size-15;
+                    color: $dark-color;
+                }
+            }
+            .tour-info {
+                display: $display-flex;
+                align-items: $align-items-center;
+                color: $dark-color;
+                font-size: $font-size-15;
+                padding: 15px 0;
+                border-bottom: 1px solid #D1D1D1;
+                &:last-child {
+                    border-bottom: $border-bottom-none;
+                }
+                .title {
+                    flex: 0 15%;
+                }
+                .feature {
+                    display: $display-flex;
+                    align-items: $align-items-center;
+                    flex-wrap: $flex-wrap;
+                    justify-content: $justify-content-between;
+                    p {
+                        display: $display-flex;
+                        align-items: $align-items-center;
+                        margin-right: 15px;
+                        img {
+                            width: 31px;
+                        }
+                        span {
+                            color: $dark-color;
+                            font-size: $font-size-13;
+                            font-weight: $font-weight;
+                        }
+                        &.hide {
+                            opacity: 0.20;
+                        }
+                        &:last-child {
+                            margin-right: 0;
+                        }
+                    }
+                    div {
+                        img {
+                            margin-right: 10px;                            
+                        }
+                        &:last-child {
+                            img {
+                                margin-right: 0;
+                            }                            
+                        }
+                    }                    
+                }
+            }
+            .itinerary-info {
+                .heading {
+                    &.heading-primary {
+                        margin-bottom: 0;
+                    }
+                }
+                .ant-collapse {
+                    background: $background-none;
+                    .ant-collapse-item {
+                        border-bottom: $border-bottom-none;
+                        .ant-collapse-header {
+                            padding: 15px 0;
+                            .ant-collapse-arrow {
+                                background: #F8F8F8;
+                                border-radius: $border-radius-4;
+                                width: 32px;
+                                height: 32px;
+                                line-height: 32px;
+                                margin-top: $margin-top-0;
+                                svg {
+                                    fill: #1E7DFF;
+                                    transform: rotate(90deg);
+                                }
+                            }
+                            .title {
+                                display: $display-flex;
+                                align-items: $align-items-center;
+                                .heading {
+                                    margin-left: 10px;
+                                }
+                            }
+                        }
+                        .ant-collapse-content {
+                            border-top: $border-top-none;
+                            .ant-collapse-content-box {
+                                padding: 0;
+                                img {
+                                    width: 25%;
+                                    float: left;
+                                    margin-right: 15px;
+                                }
+                            }
+                        }
+                        &.ant-collapse-item-active {
+                            .ant-collapse-header { 
+                                .ant-collapse-arrow { 
+                                    svg {
+                                        transform: rotate(-90deg) !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }        
+            }
+        }
+        .reservation-block {
+            flex: 0 29.5%;
+            .card {
+                padding: $padding-0;
+                margin-top: 13px;                
+            }
+            .traveller-select {
+                padding: 15px;
+                position: $position-relative;
+                .heading-sm {
+                    color: #616161;
+                }
+                .traveller-info {
+                    font-size: 12px;
+                    font-weight: $font-weight;
+                    color: #404040;
+                    display: $display-block;
+                    line-height: 18px;
+                }
+                select,
+                button {
+                    margin: 10px 0;
+                    width: $width-100;
+                    height: 45px;
+                    border-radius: $border-radius-5;
+                    background: #F8F8F8;
+                    border: 1px solid #D6D6D6;
+                    box-shadow: 0 0 2px rgba(255,255,255,0.16);
+                    padding-left: 40px;
+                    -moz-appearance:none; /* Firefox */
+                    -webkit-appearance:none; /* Safari and Chrome */
+                    appearance:none;
+                    text-align: $text-left;
+                    background-repeat: no-repeat;
+                    background-position: 5px center, 113% center;
+                    cursor: $cursor-pointer;
+                    font-weight: $font-weight;
+                    color: $dark-color;
+                    &.date {
+                        background-image: url('../../assests/images/svg/calendar.svg'), url('../../assests/images/svg/down-arrow.svg');
+                    }
+                    &.time {
+                        background-image: url('../../assests/images/svg/time.svg'), url('../../assests/images/svg/down-arrow.svg');
+                    }
+                    &.traveller {
+                        background-image: url('../../assests/images/svg/family.svg'), url('../../assests/images/svg/down-arrow.svg');
+                        margin-bottom: $margin-bottom-0;                    
+                    }
+                    &:hover,
+                    &:active,
+                    &:focus {
+                        outline: $outline-none;
+                    }
+                }
+                .visit-date {
+                    position: $position-absolute;
+                    z-index: 1;
+                    top: 93px;
+                    padding: 0 15px;
+                    left: $left-0;
+                    right: $right-0;
+                    .DayPicker {
+                        padding: 10px 0;
+                        .DayPicker_weekHeader {
+                            top: 30px;
+                            margin-left: $margin-left-0 !important;
+                            left: $left-0;
+                            right: $right-0;
+                            .DayPicker_weekHeader_ul {
+                                display: $display-flex;
+                                .DayPicker_weekHeader_li {
+                                    display: initial;
+                                }
+                            }
+                        }
+                        .DayPickerNavigation {
+                            display: $display-flex;
+                            justify-content: $justify-content-between;
+                            .DayPickerNavigation_button {
+                                padding: 0 13px;
+                            }
+                        }
+                        .DayPicker_transitionContainer {
+                            overflow: unset;
+                            height: 230px !important;
+                            .CalendarMonthGrid {
+                                width: 100% !important;                                
+                            }
+                            .CalendarMonthGrid_month__hidden {
+                                visibility: unset;
+                                display: none;
+                            }
+                            .CalendarMonth_caption {
+                                padding-bottom: 0;
+                                position: $position-absolute;
+                                left: $left-0;
+                                right: $right-0;
+                                top: -71px;
+                            }
+                            .CalendarMonth_table {
+                                margin-top: 30px;
+                            }
+                        }
+                    }                    
+                }
+            }
+            .reservation {                
+                .title { 
+                    border-radius: $border-radius-0;       
+                }
+            }
+        }        
+    }    
+    .card {
+        padding: 15px;
+        .heading {
+            &.heading-primary {
+                margin-bottom: 15px;
+            }
+        }      
+    }        
+}

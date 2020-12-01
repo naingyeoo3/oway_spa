@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <g id="iconfinder_weather-01_1530392" transform="translate(-92.145 -92.145)">
+    <circle id="Ellipse_247" data-name="Ellipse 247" cx="5.162" cy="5.162" r="5.162" transform="translate(96.983 96.983)" fill="#67a7ff"/>
+    <path id="Path_5789" data-name="Path 5789" d="M168.269,163.4a4.739,4.739,0,1,1-3.814-4.65,4.782,4.782,0,0,1,3.814,4.65.46.46,0,0,0,.92,0,5.66,5.66,0,1,0-4.53,5.545,5.73,5.73,0,0,0,4.53-5.545A.46.46,0,0,0,168.269,163.4Z" transform="translate(-61.384 -61.257)" fill="#3e3e3e"/>
+    <path id="Path_5790" data-name="Path 5790" d="M243.493,94.744V92.625a.5.5,0,0,0-.993,0v2.119A.5.5,0,0,0,243.493,94.744Z" transform="translate(-140.852)" fill="#3e3e3e"/>
+    <line id="Line_80" data-name="Line 80" x1="1.058" y1="1.834" transform="translate(97.363 93.962)" fill="#231815"/>
+    <path id="Path_5791" data-name="Path 5791" d="M169.115,114.237l-1.06-1.834a.5.5,0,0,0-.861.5l1.059,1.834A.5.5,0,0,0,169.115,114.237Z" transform="translate(-70.254 -18.692)" fill="#3e3e3e"/>
+    <line id="Line_81" data-name="Line 81" x1="1.834" y1="1.058" transform="translate(93.962 97.363)" fill="#231815"/>
+    <path id="Path_5792" data-name="Path 5792" d="M114.734,168.286l-1.834-1.06a.5.5,0,0,0-.5.861l1.834,1.06A.5.5,0,0,0,114.734,168.286Z" transform="translate(-18.688 -70.282)" fill="#3e3e3e"/>
+    <line id="Line_82" data-name="Line 82" x1="2.117" transform="translate(92.627 102.145)" fill="#231815"/>
+    <path id="Path_5793" data-name="Path 5793" d="M94.744,242.5H92.625a.5.5,0,0,0,0,.993h2.119A.5.5,0,0,0,94.744,242.5Z" transform="translate(0 -140.852)" fill="#3e3e3e"/>
+    <line id="Line_83" data-name="Line 83" x1="1.834" y2="1.058" transform="translate(93.962 105.869)" fill="#231815"/>
+    <path id="Path_5794" data-name="Path 5794" d="M114.237,301.854l-1.834,1.06a.5.5,0,0,0,.5.861l1.834-1.06A.5.5,0,0,0,114.237,301.854Z" transform="translate(-18.692 -196.425)" fill="#3e3e3e"/>
+    <line id="Line_84" data-name="Line 84" x1="1.058" y2="1.834" transform="translate(97.363 108.494)" fill="#231815"/>
+    <path id="Path_5795" data-name="Path 5795" d="M168.286,345.539l-1.06,1.834a.5.5,0,0,0,.861.5l1.06-1.834A.5.5,0,0,0,168.286,345.539Z" transform="translate(-70.282 -237.296)" fill="#3e3e3e"/>
+    <line id="Line_85" data-name="Line 85" y2="2.117" transform="translate(102.145 109.546)" fill="#231815"/>
+    <path id="Path_5796" data-name="Path 5796" d="M242.5,361.845v2.119a.5.5,0,0,0,.993,0v-2.119A.5.5,0,0,0,242.5,361.845Z" transform="translate(-140.852 -252.299)" fill="#3e3e3e"/>
+    <line id="Line_86" data-name="Line 86" x2="1.058" y2="1.834" transform="translate(105.869 108.494)" fill="#231815"/>
+    <path id="Path_5797" data-name="Path 5797" d="M301.854,346.045l1.06,1.834a.5.5,0,0,0,.861-.5l-1.06-1.834A.5.5,0,0,0,301.854,346.045Z" transform="translate(-196.425 -237.3)" fill="#3e3e3e"/>
+    <line id="Line_87" data-name="Line 87" x2="1.834" y2="1.058" transform="translate(108.494 105.869)" fill="#231815"/>
+    <path id="Path_5798" data-name="Path 5798" d="M345.539,302.647l1.834,1.06a.5.5,0,0,0,.5-.861l-1.834-1.059A.5.5,0,0,0,345.539,302.647Z" transform="translate(-237.296 -196.36)" fill="#3e3e3e"/>
+    <line id="Line_88" data-name="Line 88" x2="2.117" transform="translate(109.546 102.145)" fill="#231815"/>
+    <path id="Path_5799" data-name="Path 5799" d="M361.845,243.493h2.119a.5.5,0,0,0,0-.993h-2.119A.5.5,0,0,0,361.845,243.493Z" transform="translate(-252.299 -140.852)" fill="#3e3e3e"/>
+    <line id="Line_89" data-name="Line 89" y1="1.058" x2="1.834" transform="translate(108.494 97.363)" fill="#231815"/>
+    <path id="Path_5800" data-name="Path 5800" d="M346.045,169.115l1.834-1.06a.5.5,0,0,0-.5-.861l-1.834,1.059A.5.5,0,0,0,346.045,169.115Z" transform="translate(-237.3 -70.254)" fill="#3e3e3e"/>
+    <line id="Line_90" data-name="Line 90" y1="1.834" x2="1.058" transform="translate(105.869 93.962)" fill="#231815"/>
+    <path id="Path_5801" data-name="Path 5801" d="M302.647,114.734l1.06-1.834a.5.5,0,0,0-.861-.5l-1.059,1.834A.5.5,0,0,0,302.647,114.734Z" transform="translate(-196.36 -18.688)" fill="#3e3e3e"/>
+  </g>
+</svg>

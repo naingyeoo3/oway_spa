@@ -1,0 +1,8 @@
+<svg id="minute" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+  <rect id="Rectangle_2149" data-name="Rectangle 2149" width="30" height="30" fill="none"/>
+  <g id="Group_4941" data-name="Group 4941" transform="translate(3 3)">
+    <circle id="Ellipse_252" data-name="Ellipse 252" cx="12" cy="12" r="12" transform="translate(1)" fill="#67a7ff"/>
+    <path id="Path_6526" data-name="Path 6526" d="M12.423,0A12.423,12.423,0,1,0,24.846,12.423,12.416,12.416,0,0,0,12.423,0Zm0,23.19A10.767,10.767,0,1,1,23.19,12.423,10.779,10.779,0,0,1,12.423,23.19Z" fill="#3e3e3e"/>
+    <path id="Path_6527" data-name="Path 6527" d="M223.216,144.206h-2.707v-4.613a.828.828,0,0,0-1.656,0v5.441a.828.828,0,0,0,.828.828h3.536a.828.828,0,0,0,0-1.656Z" transform="translate(-208.231 -132.031)" fill="#3e3e3e"/>
+  </g>
+</svg>

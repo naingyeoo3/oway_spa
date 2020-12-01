@@ -1,0 +1,322 @@
+.recommended-city {
+    &.ant-select-dropdown {        
+        // top: 265px !important;
+        box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.20);
+        z-index: 1;
+        // top: 285px !important;
+        & > div {
+            overflow: unset !important;
+        }
+        .ant-select-dropdown-menu {
+            max-height: unset;
+            position: relative;
+            max-width: unset;
+            overflow-y: unset;
+            height: auto;
+            overflow: unset;
+            .ant-select-dropdown-menu-item-group {
+                border-bottom: 1px solid #CCCCCC;
+                padding-bottom: 10px;                
+                .ant-select-dropdown-menu-item-group-title {
+                    color: #0A56BB;
+                    font-size: 13px;
+                    text-transform: uppercase;
+                    border-top: 0.5px solid #CCCCCC;
+                    margin-top: 7px;
+                    font-family: 'Lato', sans-serif;
+                    font-weight: 600;
+                    &:first-child {
+                        border-top: none;
+                    }
+                }
+                .ant-select-dropdown-menu-item-group-list {
+                    // column-count: 3;
+                    .ant-select-dropdown-menu-item {
+                        color: #333333;
+                        font-size: 13px;
+                        padding: 0 12px;
+                        background: none;
+                        font-weight: 600;
+                        img {
+                            display: none;
+                        }
+                        &.ant-select-dropdown-menu-item-active {
+                            background-color: #e6f7ff;
+                        }
+                        &:hover,
+                        &:active,
+                        &:focus {
+                            color: #0A56BB;
+                            background-color: #e6f7ff;
+                        }
+                    }
+                }
+                &:last-child {
+                    border-bottom: none;
+                }
+            }            
+        }        
+    }
+}
+.search-section {
+    .search-input-section {
+        .ant-card-body {
+            .ant-form {
+                .to-search {
+                    .ant-select-selection__placeholder {
+                        left: 20px !important;
+                    }
+                    .to-spinner {
+                        padding-left: 10px;
+                    }
+                }
+                .search-autocomplete {
+                    &.flight {
+                        .ant-select-combobox {
+                            .ant-select-search__field__wrap {
+                                white-space: nowrap;
+                                min-width: 100px;                                        
+                                .ant-input {
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                    padding-right: 30px;
+                                }
+                            }
+                        }                                
+                    }
+                    .ant-select-auto-complete {
+                        &.ant-select {
+                            line-height: 26px;            
+                            .ant-select-selection__rendered {                
+                                line-height: 26px;
+                                position: relative;
+                                .ant-select-selection__placeholder {
+                                    margin-right: 0;
+                                    margin-left: 0;
+                                    font-size: 16px;
+                                    font-weight: 500;
+                                    position: absolute;
+                                    top: 40px;
+                                    left: 10px;
+                                    font-family: 'Lato';
+                                }
+                            }
+                            // .ant-select-search--inline {
+                            //     margin-top: -33px;
+                            //     height: 59px;
+                            //     .ant-input {
+                            //         padding-top: 35px;
+                            //         cursor: inherit;
+                            //     }
+                            // }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.autocomplete-item{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    .overflow-fix {
+        width: 88%;
+        overflow: hidden;
+    }
+    .title{
+        display: flex;
+        min-width: 100px;
+        white-space: nowrap;
+        padding-right: 5px;
+        img{
+            width: 14px;
+            margin-right: 7px;
+            height: 20px;
+            &.airport-img {
+                font-size: 16px;
+            }
+        }
+        .title-text{            
+            font-size: 14px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        
+    }
+    .airport{
+        font-size: 12px;
+        // line-height: 12px;
+        padding-left: 22px;            
+    }
+    .airport-code{
+        /*display: flex;
+        align-items: center;*/
+        background: #999999;
+        height: 10%;
+        color: #FFF;
+        padding: 0 3px;
+        border-radius: 3px;
+        font-size: 13px;
+    }
+}
+.recommended-city{
+    .ant-select-dropdown-menu-item-group-list{
+        column-count: 3;
+        font-family: 'Lato', sans-serif;
+    }
+}
+.recommended-city {
+    &.ant-select-dropdown--single {
+        &.tour,
+        &.flight,
+        &.bus,
+        &.hotel {            
+            .ant-select-dropdown-menu-item {
+                img {
+                    width: 14px;
+                }
+                p {
+                    display: inline-block;
+                    margin-left: 10px;
+                    vertical-align: middle;
+                    color: #333333;
+                    font-size: 13px;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
+.recommended-city {
+    &.ant-select-dropdown--single {
+        &.tour,
+        &.bus {            
+            .ant-select-dropdown-menu-item {
+                p {                    
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+}
+.city-list{
+    &.ant-select-dropdown--single {
+        .ant-select-dropdown-menu-item-group-title {
+            height: auto;
+            font-family: 'Lato', sans-serif;
+        }
+        .ant-select-dropdown-menu-item-group-list{
+            column-count: unset;
+            .ant-select-dropdown-menu-item {
+                padding: 5px 20px 5px 25px;
+                &:hover,
+                &:active,
+                &:focus {
+                    background: #e6f7ff;
+                }
+            }
+        }
+    }
+    &.tour {
+        .ant-select-dropdown-menu-item-group-title {
+            color: #0A56BB;
+            font-size: 13px;
+            margin-top: 3px;
+            font-weight: 600;    
+        }
+        .ant-select-dropdown-menu-item {
+            img {
+                width: 14px;
+            }
+            p {
+                display: inline-block;
+                margin-left: 10px;
+                vertical-align: middle;
+                color: #333333;
+                font-size: 13px;
+                font-weight: 600;
+            }
+        }
+    }
+    &.bus {
+        .ant-select-dropdown-menu-item-group-title {
+            color: #0A56BB;
+            font-size: 13px;
+            margin-top: 3px;
+            font-weight: 600;
+        }
+        .ant-select-dropdown-menu-item-group-list {            
+            .ant-select-dropdown-menu-item {
+                img {
+                    width: 14px;
+                }
+                p {
+                    display: inline-block;
+                    margin-left: 10px;
+                    vertical-align: middle;
+                    color: #333333;
+                    font-size: 13px;
+                    font-weight: 600;
+                }
+            }
+        }
+        &.ant-select-dropdown--single {
+            .ant-select-dropdown-menu {
+                .ant-select-dropdown-menu-item {
+                    img {
+                        width: 14px;
+                    }
+                    p {
+                        display: inline-block;
+                        margin-left: 10px;
+                        vertical-align: middle;
+                        color: #333333;
+                        font-size: 13px;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }  
+    }    
+}
+.location-label{
+    display: flex;
+    font-size: 16px;
+    padding: 3px 0px;
+    border-bottom: 1px solid #e6e6e6;
+    margin-bottom: 10px;
+    font-family: 'Lato', sans-serif;
+    img{
+        width: 12px;
+        margin-right: 5px;
+        height: 32px;
+    }
+    & > div {
+        color: #0a56bb;
+        font-weight: 600;
+        font-size: 13px;
+    }
+}
+//error message input
+.has-error {
+    .ant-select-focused {
+        .ant-select-selection {
+            box-shadow: none !important;
+            border-color: transparent !important;
+        }
+    }
+    .ant-select-open {
+        .ant-select-selection {
+            box-shadow: none !important;
+            border-color: transparent !important;
+        }
+    }
+}
+.hotel-placeholder{
+    .ant-select-dropdown-menu-item-group-list{
+        // column-count: 3;
+        font-family: 'Lato', sans-serif;
+    }   
+}

@@ -1,0 +1,16 @@
+.select-dropdown-passenger{
+    position: relative;
+    .dropdown-passenger-name{
+        background: #fff;
+        border: 1px solid #ddd;
+        padding: 4px 16px;
+    }
+    .passenger-list{
+        position: absolute;
+        background: #fff;
+        padding: 10px 20px;
+        .passenger-list-item{
+
+        }
+    }
+}

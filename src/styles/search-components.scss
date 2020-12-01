@@ -1,0 +1,1097 @@
+@import 'main.scss';
+.search-section {
+    background: $white-color;
+    border-radius: 10px 0 10px 10px;
+    padding: 30px 15px 0 15px;
+    box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.20);
+    .search-layout {
+        display: $display-flex;
+        padding: 0 0 20px 0;
+        .trip-select-tabs {
+            display: $display-flex;
+            border: 1px solid #D6D6D6;
+            border-radius: 20px;
+            background: #F8F8F8;
+            height: 40px;
+            .tab {                
+                min-width: 200px;
+                font-size: $font-size-15;
+                cursor: $cursor-pointer;
+                color: #404040;
+                display: $display-flex;
+                justify-content: $justify-content-around;
+                align-items: $align-items-center;
+                margin-top: -1px;
+                &.active {
+                    background-color: $primary-color;
+                    color: $white-color;
+                    border-radius: 23px;
+                    transition: 0.1s;
+                }            
+            }
+        }
+    }
+    .mobile-title {
+        display: none;
+        padding: 18px;
+        text-align: center;
+        color: #FFF;
+        font-size: 15px;
+        font-weight: 600;
+        text-shadow: 0px 3px 10px #1957a9;
+        letter-spacing: 0.5px;
+    }
+    .search-input-section {
+        .ant-form-explain{
+            position: absolute;            
+            min-height: auto;            
+            //background: #c00000;
+            font-size: 11px;
+            padding: 3px;
+            //color: #FFFFFF;
+            padding: 3px 0px;
+            color: #ff0000;
+            bottom: -26px;
+            border-top: 2px solid #ff4444;
+            width: 100%;
+            top: 60px;
+        }
+        .ant-form-item-with-help{
+            margin-bottom: 0;
+        }
+        .ant-card-body {
+            padding: 0;
+            border: 1px solid #D6D6D6;
+            border-radius: 5px;
+            background: #F8F8F8;
+            box-shadow: 0 0 2px rgba(255, 255, 255, 0.16);
+            .ant-form {
+                display: flex;
+                .ant-form-item {                    
+                    margin: 0;
+                    padding: 0;
+                    position: relative;
+                    .ant-form-item-control {
+                        line-height: 0;
+                        .ant-form-item-children {                            
+                            .ant-form-item {
+                                border-right: none;
+                                box-shadow: none;
+                                width: 49%;
+                            }
+                            .popover-open-btn {
+                                line-height: 20px;
+                                padding: 7px 11px 5px;
+                                font-size: 17px;
+                                color: #404040;
+                                //font-family: $font-lato;
+                                &.ant-popover-open{
+                                    border-bottom: 2px solid #0A56BB;
+                                }
+                                &.ant-dropdown-open{
+                                    border-bottom: 2px solid #0A56BB;
+                                }
+                            }
+                        }
+                        .ant-select-selection {
+                            background: transparent;
+                            cursor: inherit;
+                            .ant-select-selection__clear {
+                                background: transparent;
+                                position: absolute;
+                                top: 40px;
+                                right: 15px;
+                            }
+                        }
+                        .select-class-type{
+                            height: 100%;
+                            .popover-open-btn{
+                                height: 100%;
+                                padding-top: 30px;
+                                border-radius: 0;
+                                max-width: 100%;
+                                white-space: nowrap;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                font-family: $font-lato;
+                            }
+                        }
+                    }
+                    .ant-form-item-control-wrapper{
+                        display: block;     
+                        z-index: 0;               
+                        height: 100%;
+                        .ant-form-item-control{
+                            height: 100%;
+                            // border-right: 1px solid #DCDCDC;
+                            // box-shadow: 1px 0 0 rgba(255, 255, 255, 0.84);
+                            .ant-skeleton{
+                                margin-top: 30px;
+                                padding-left: 10px;
+                            }
+                            .web-range-picker{
+                                height: 100%; 
+                                cursor: pointer;                           
+                                .DateRangePicker{
+                                    height: 100%;                                    
+                                    .DateRangePickerInput{
+                                        height: 100%;
+                                        .DateInput{
+                                            height: 100%;
+                                            #endDate {
+                                                padding-left: 16px;
+                                            }                                            
+                                            .DateInput_input{
+                                                // height: 112%;
+                                                // padding-top: 23px;
+                                                cursor: pointer;                                                
+                                            }
+                                        }
+                                    }                                    
+                                }                
+                                .DateRangePicker > div{
+                                    height: 100%;
+                                }
+                            }     
+                            .mobile-date-picker{
+                                height: 100%;
+                                position: relative;
+                                .SingleDatePicker{
+                                    height: 100%;
+                                    width: 49.9%;
+                                    .SingleDatePickerInput{
+                                        height: 100%;
+                                        .DateInput{
+                                            height: 100%;
+                                            .DateInput_input{
+                                                height: 100%;
+                                            }
+                                        }
+                                    }
+                                }
+                                .disabled-input {
+                                    border: none;
+                                    background: none;
+                                    position: absolute;
+                                    bottom: 9px;
+                                    /*right: -71px;*/
+                                    font-size: 16px;
+                                    color: #DCDCDC;
+                                    text-align: left;
+                                    padding-left: 16px;
+                                    -webkit-text-fill-color: #DCDCDC;
+                                    opacity: 1;
+                                    &:disabled {
+                                        color: #DCDCDC;
+                                        -webkit-text-fill-color: #DCDCDC;
+                                        opacity: 1;
+                                        font-family: $font-lato;
+                                    }
+                                }
+                                .SingleDatePicker > div{
+                                    height: 100%;
+                                }
+                                .ant-divider,
+                                .ant-divider-vertical {
+                                    top: 0;
+                                }
+                            }        
+                        }    
+                    }
+                    &.last-item {
+                        .ant-form-item-control {
+                            border-right: none;
+                            box-shadow: none;
+                        }                    
+                    }                   
+                    @media screen and (max-width: 991px) {
+                        margin-bottom:15px;
+                    }  
+                }                                
+                .ant-input {
+                    height: 100%;
+                    padding: 30px 10px 9px;
+                    border: 0;                  
+                    background: transparent;
+                    font-size: 17px;                    
+                    line-height: 0;
+                    cursor: pointer;
+                    color: #404040;
+                    border-radius: 0;
+                    border-bottom: 2px solid transparent;
+                    cursor: inherit;
+                    font-family: $font-lato;
+                    &::placeholder {
+                        color: #404040;
+                    }
+                    &:focus {
+                        border: none;
+                        box-shadow: none;
+                        border-bottom: 2px solid #0A56BB;
+                        //border-radius: 0;
+                        //background: #eaf5ff;
+                    }
+                    &.spinner {
+                        background: url('../assests/images/loading.gif') center center no-repeat;
+                        width: 100px;
+                        margin-top: 10px;
+                        margin-bottom: -10px;
+                        margin-left: -28px;
+                        background-size: 100px 100px;
+                        &.bus-spinner {
+                            margin-left: -18px;
+                        }
+                    }
+                }
+                .ant-input[disabled] {
+                    color: rgba(0, 0, 0, 0.25);
+                    cursor: not-allowed;
+                }
+                .city-column {                   
+                    &.to-search {   
+                        .ant-form-item-label {
+                            label {
+                                margin-left: 10px;
+                            }
+                        }
+                        .ant-input {
+                            padding: 30px 10px 9px 20px;
+                            border-radius: 0;
+                        }
+                    }
+                }
+                .class-column {
+                    cursor: pointer;
+                }
+                .date-column {
+                    &.search-date {
+                        .ant-form-item-label {
+                            width: 100%;
+                            text-align: left;
+                            .date-label {
+                                width: 52%;
+                                display: inline-block;
+                            }
+                        }
+                    }
+                }                
+                .swap-content {
+                    position: relative;
+                    .swap-button {
+                        background: url(../assests/images/svg/btn-swap.svg) no-repeat;
+                        width: 28px;
+                        height: 28px;
+                        z-index: 1;
+                        margin-left: -15px;
+                        position: absolute;
+                        top: 16px;
+                    }
+                }
+                .search-vertical {
+                    &.ant-divider-vertical {
+                        top: 0.50em;
+                        height: 45px;
+                        box-shadow: 1px 0 0 rgba(255, 255, 255, 0.84);
+                        margin: 0;
+                        background: #DCDCDC;
+                    }
+                }                    
+                .ant-form-item-label {
+                    line-height: 20px;
+                    margin-top: 8px;
+                    margin-left: 10px;
+                    position: absolute;
+                    font-weight: $font-weight-600;                  
+                    label {
+                        display: block;
+                        color: #FAA534;
+                        font-size: 13px;                        
+                        text-transform: uppercase;
+                        &::after {
+                            content: " ";
+                        }
+                        .to-label {                            
+                            opacity: 0.5;
+                        }
+                        .round-to-label {
+                            opacity: 1;                            
+                        }
+                    }
+                }           
+            }
+        }
+        .ant-form-horizontal {
+            display: $display-flex;
+            justify-content: $justify-content-between;
+            align-items: $align-items-center;
+            padding: 15px 0;
+            line-height: $line-height-0;
+            .ant-radio-group {
+                .ant-radio-wrapper {
+                    float: left;
+                    font-size: $font-size-15;
+                    color: #404040;
+                    .ant-radio {
+                        .ant-radio-inner {
+                            border-color: #707070;
+                            box-shadow: none;
+                            &::after {
+                                background-color: #404040;
+                            }
+                        }
+                    }                         
+                }
+            }                      
+            [ant-click-animating-without-extra-node='true'] {
+                &:after,
+                .ant-click-animating-node {
+                    --antd-wave-shadow-color: #FAA534;
+                }
+            }
+        }
+    }
+    // Trending Searches
+    .trending-search {
+        background: #F8F8F8;
+        margin: 0 -15px;
+        padding: 15px 15px;
+        border-radius: 0 0 10px 10px;
+        color: #404040;
+        font-size: $font-size-15;
+        display: $display-flex;
+        justify-content: $justify-content-start;
+        align-items: $align-items-center;
+        border-top: 1px solid #DFDFDF;
+        span {
+            margin-right: 12px;
+        }
+        .route-list {
+            background: $primary-color;
+            color: $white-color;
+            display: $display-inline-block;
+            padding: 3px 10px; 
+            border-radius: $border-radius-5;
+            margin: 0 8px 0 0;
+            transition: 0.3s;
+            cursor: $cursor-pointer;
+            font-family: $font-lato;
+            .route-icon {
+                background: url(../assests/images/svg/route.svg);
+                width: 15px;
+                height: 12px;
+                margin: 0 5px;
+                display: $display-inline-block;         
+            }        
+            &:hover,
+            &:active,
+            &:focus { 
+                background: $secondary-color;
+                box-shadow: 0 0 14px rgba(249, 165, 51, 0.5);
+                text-shadow: 0 1px 1px rgba(0, 0, 0, 0.16);
+                .route-icon {
+                    background: url(../assests/images/svg/route-hover.svg);
+                }           
+            }
+        }
+    }
+}
+// Class Column (Search Box)
+.search-dropdown-class {
+    // top: 275px !important;
+    min-width: 200px;
+    z-index: 1;
+    // &.ant-dropdown {
+    //     z-index: 1;
+    // }
+    .ant-dropdown-menu {
+        border-radius: $border-radius-5;
+        box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.20);        
+        .ant-dropdown-menu-item {        
+            font-family: $font-lato;
+            font-size: $font-size-15;
+            line-height: 20px;
+            padding: 5px 10px;
+            a {
+                color: #555555;
+                font-weight: $font-weight-600;
+            }
+            &:hover,
+            &:active,
+            &:focus {
+                background: #e6f7ff;
+                a {
+                    color: $primary-color;
+                }                
+            }
+        }
+    }    
+   
+}
+
+.ant-popover-inner {
+    background-clip: border-box;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16) \9;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16) \9;
+    border: 1px solid #CCC;
+}
+.ant-select-dropdown {
+    &.recommended-city{
+        &.flight,
+        &.hotel,
+        &.bus,
+        &.tour {
+            width: 600px !important;
+            max-height: 700px;            
+        }        
+    }
+}
+.ant-select-dropdown {
+    &.city-list {
+        &.flight,
+        &.bus,
+        &.hotel,
+        &.tour {
+            width: 600px !important;
+            max-height: 700px;
+        }        
+    }
+}
+.ant-select-dropdown--single {
+    .ant-select-dropdown-menu {
+        height: 350px;
+        overflow-y: auto;
+        .ant-select-dropdown-menu-item {
+            // background-image: url(../assests/images/png/flight-grey.png);
+            background-repeat: no-repeat;
+            background-size: 20px;
+            background-position: 0; 
+            padding: 5px 20px;
+            font-family: $font-lato;
+            &:hover,
+            &:active,
+            &:focus {
+                color: #0A56BB;
+                background-color: #e6f7ff;
+            }
+        }
+    }        
+}
+.recommended-city {
+    &.flight {
+        &.ant-select-dropdown--single {
+            .ant-select-dropdown-menu {
+                // height: 350px;
+                // overflow-y: auto;
+                .ant-select-dropdown-menu-item {
+                    // background-image: url(../assests/images/png/flight-grey.png);
+                    background-repeat: no-repeat;
+                    background-size: 20px;
+                    background-position: 0; 
+                    padding: 5px 20px;
+                    font-family: $font-lato;
+                    &:hover,
+                    &:active,
+                    &:focus {
+                        color: #0A56BB;
+                        background-color: #e6f7ff;
+                    }
+                }
+            }        
+        }
+    }
+}
+.recommended-city {
+    &.flight {
+        .ant-select-dropdown-menu-item-group-list {
+            // column-count: unset;
+        }
+    }    
+}
+// Search Layout Coloumn divided by flex 
+.search-section {
+    .search-input-section {
+        .ant-card-body {
+            .ant-form {
+                .city-column {
+                    flex: 2;
+                }
+                .class-column {
+                    flex: 1.5;
+                }
+                .traveller-column {
+                    flex: 1.5;
+                }
+                .date-column {
+                    flex: 3;
+                }
+            }
+        }
+    }
+}
+.search-section {
+    &.bus-search {
+        .search-input-section {
+            .ant-card-body {
+                .ant-form {
+                    .city-column {
+                        flex: 2.5;
+                    }
+                    .traveller-column {
+                        flex: 1.6;
+                    }
+                    .date-column {
+                        flex: 3.2;
+                    }
+                }
+            }
+        }
+    }   
+}
+.search-section {
+    &.hotel-search {
+        .search-input-section {
+            .ant-card-body {
+                .ant-form {
+                    .city-column {
+                        flex: 4;
+                    }
+                    .traveller-column {
+                        flex: 2;
+                    }
+                    .date-column {
+                        flex: 4;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// responsive layout design
+@media only screen and (max-width: 991px) {    
+    .trending-search {
+        display: none !important;
+    }
+    .ant-select-dropdown-menu{
+        max-height: 730px !important;
+        overflow-y: scroll !important;
+    }
+    .city-list {
+        &.ant-select-dropdown {
+            &.flight,
+            &.bus,
+            &.hotel,
+            &.tour {
+                width: 100% !important;        
+                top: 112px !important;
+                left: 0px !important;
+                max-height: 220px;
+                overflow: auto;
+                position: absolute;
+                height: 220px;
+                .ant-select-dropdown-menu {
+                    height: auto !important;
+                    // min-height: 200px;
+                    max-height: unset !important;
+                    overflow: inherit;
+                    overflow-y: unset !important;
+                }
+            }            
+        } 
+    }
+    .ant-select-selection {        
+        .ant-select-selection__placeholder{
+            padding: 4px 10px;
+        }
+    } 
+    
+    .recommended-city.tour{
+            display: none;
+    }                     
+    .recommended-city.bus{
+        display: none;
+    }
+    .recommended-city {
+        &.ant-select-dropdown {
+            &.hotel {
+                z-index: 1000;
+                width: 100% !important;
+                left: 0 !important;
+                top: 112px !important;
+                max-height: 220px;
+                overflow: scroll;
+                .ant-select-dropdown-menu {
+                    min-height: 200px;
+                }
+            }
+        }
+    }
+    .ant-drawer{        
+        .ant-drawer-content-wrapper{
+            height: 100% !important;
+            .ant-drawer-content{
+                .ant-drawer-wrapper-body{
+                    background-image: url('../assests/images/mobile-bg-layout.png');
+                    height: 200px;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: bottom;
+                    .ant-drawer-header{
+                        position: relative;
+                        padding: 16px 24px;
+                        color: rgba(0, 0, 0, 0.65);
+                        background:transparent;
+                        border-bottom: 1px solid #e8e8e8;
+                        border-radius: 4px 4px 0 0;
+                        border: 0;
+                        .ant-drawer-title{
+                            text-align: center;
+                            font-weight: bold;
+                            font-size: 18px;
+                            color: #fff;
+                            text-transform: capitalize;
+                            letter-spacing: 1px;
+                            //font-family: $font-lato;
+                        }
+                    }
+                    .ant-drawer-body{
+                        .ant-select-selection{
+                            background: transparent;
+                            .ant-select-selection__placeholder {
+                                color: #FFFFFF;
+                                margin-left: 0;
+                                margin-right: 0;
+                                padding: 0 10px;
+                                font-family: $font-lato;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }   
+    .select-drawer-height{  
+        &.mobile-select-drawer {
+            .ant-drawer-content-wrapper{                
+                height: auto !important;
+                border-radius: 10px 10px 0 0;
+                .ant-drawer-content{
+                    border-radius: 10px 10px 0 0;
+                    .ant-drawer-wrapper-body{       
+                        background: #fff;      
+                        border-bottom-right-radius: 0px;
+                        border-bottom-left-radius: 0px;
+                        height: auto;
+                        .ant-drawer-header{
+                            position: relative;
+                            padding: 16px 24px 0 24px;
+                            color: rgba(0, 0, 0, 0.65);
+                            background: #fff;                        
+                            border-bottom: 1px solid #e8e8e8;
+                            border-radius: 4px 4px 0 0;
+                            border: 0;
+                            .ant-drawer-close {
+                                top: -4px;
+                                right: 0;
+                                left: unset;
+                                background: none;
+                                .anticon {
+                                    display: block;
+                                    fill: rgba(0, 0, 0, 0.45);
+                                    svg {
+                                        fill: rgba(0, 0, 0, 0.45);
+                                    }
+                                }
+                            }                                               
+                            .ant-drawer-title{
+                                text-align: left;
+                                font-weight: bold;
+                                font-size: 18px;                            
+                                color: #484848;
+                                border-bottom: 1px solid #e8e8e8;
+                                padding-bottom: 10px;
+                                text-transform: uppercase;
+                            }
+                        }
+                        .ant-drawer-body {
+                            padding: 10px 10px 15px;
+                        }
+                    }
+                }
+            }
+        }           
+    } 
+      
+    .search-section{
+        padding: 10px 0 0 0; 
+        border-radius:0 0 10px 10px;
+        background: #2e87ff;
+        background: linear-gradient(270deg, #2e87ff 0%, #65b9f9 100%);
+        margin-top: -10px;
+        box-shadow: none;
+        .mobile-title {
+            display: block;
+        }
+        .right-tab-bar{
+            .ant-tabs-ink-bar{
+                    transform: translate3d(100%, 0px, 0px) !important;
+                }
+        }
+        .ant-tabs{
+            color:#ccc;
+            .ant-tabs-bar{
+                margin: 0;
+                border: 1px solid transparent;
+                .ant-tabs-nav{
+                    // display: flex !important;
+                    width: 100%;
+                    .ant-tabs-ink-bar{
+                        width: 45% !important;
+                        background-color: #FAA534;
+                        bottom: 5px;
+                        border-radius: 50px;
+                    }
+                    .ant-tabs-tab{
+                        width: 45%;
+                        text-align: center;
+                        color: #FFFFFF;
+                        letter-spacing: 0.5px;
+                        font-size: 15px;
+                        padding: 18px 16px;
+                        margin: 0 auto;
+                        span {
+                            transition: $transition-style-alt;
+                        }
+                    }
+                    .ant-tabs-tab-active{
+                        color:#FFFFFF;
+                        font-weight: 600;
+	                    text-shadow: 0px 3px 10px #1957a9;
+                    }
+                }
+                .ant-tabs-nav > div{
+                    display: flex;
+                    width: 100%;
+                }                               
+            }
+        }
+         
+        .search-layout{
+            .trip-select-tabs{
+                width: 100%;
+                .tab{
+                    width: 100%;
+                    min-width: 0;
+                }
+            }
+        }
+        .search-input-section{
+            background: #F8F8F8;
+            border-radius: 10px;
+            padding: 20px 15px;
+            box-shadow:0px 1px 15px 0px rgba(0, 0, 0, 0.31);
+            .ant-card.search-section-card{
+                background:none;
+                .ant-card-body{
+                    border: 0;
+                    background:none; 
+                    margin-top:0;                   
+                    .ant-form{
+                        display: inline;                        
+                        .swap-content{                            
+                            height: 1px;
+                            margin-top: -16px;
+                            .swap-button {
+                                top: -15px;
+                                right: 0;
+                                -webkit-transform: rotate(90deg);
+                                transform: rotate(90deg);
+                            }
+                        }
+                        .ant-form-item-label{
+                            padding: 0;
+                            position: initial;
+                            margin-top: 0;
+                            margin-left: 0;
+                            .to-label {
+                                display: none;
+                            }
+                        }
+                        .ant-form-item{
+                            width: 100%;
+                            .ant-input{
+                                margin: 0;
+                                height: 40px;
+                                padding: 0;
+                                margin-left: 0;
+                                min-width: 100px;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
+                                padding-right: 30px;
+                                &:focus {
+                                    border-bottom: 2px solid transparent;
+                                }                             
+                            }
+                            &.search-date {
+                                .ant-input{
+                                    width: 48%;
+                                    &:first-child {
+                                        width: 52%;
+                                    }
+                                }
+                            }
+                            .popover-open-btn{                                                                
+                                .traveler-title{
+                                    height: 36px;
+                                    align-items: center;
+                                    display: flex;
+                                }
+                            }
+                            .select-class{
+                                height: 40px;
+                                font-family: 'Lato';
+                            }
+                            .ant-form-item-control-wrapper{
+                                .ant-form-item-control {
+                                    border-right: none;
+                                    box-shadow: none;
+                                }
+                            }
+                        }
+                        .form-search-btn{
+                            padding: 10px 0;
+                            .btn-orange{
+                                width: 100%;
+                                height: 36px;
+                            }
+                        }                                                
+                        .ant-form-item{
+                            &.traveller-column {
+                                .popover-open-btn {
+                                    padding: 0 0 8px;
+                                }                                
+                            }
+                            border: 0;
+                            &.to-search {
+                                padding-top: 15px;
+                                .ant-form-item-label{
+                                    label {
+                                        margin-left: 0;
+                                    }
+                                }
+                            }
+                        }
+                        .swap-content{
+                            flex-direction: row-reverse;
+                            
+                        }
+                        .ant-divider{
+                            margin: 0;
+                        }
+                        .search-vertical {
+                            &.ant-divider-vertical {
+                                display: none;
+                            }
+                        }                            
+                        .ant-form-item-children {
+                            .popover-open-btn{
+                                padding: 7px 0 8px;
+                                span {
+                                    margin-top: 0;
+                                }
+                            }
+                        }                        
+                    }                    
+                }
+            }
+            .ant-form-horizontal {
+                display: block;
+                padding: 0;
+                .ant-radio-group {
+                    .ant-radio-wrapper {
+                        margin-bottom: 15px;
+                    }
+                }
+                .ant-divider {
+                    margin: 0;
+                }
+                .form-search-btn {
+                    margin-top: 30px;
+                    .btn-orange {
+                        width: 100%;
+                    }
+                }
+            }
+            .ant-form-explain {
+                top: 40px;
+            }
+        }        
+    }
+    .search-autocomplete {
+        .ant-select-show-search{
+            position: relative;
+            width: 100%;
+        }
+        .ant-select-selection__clear {
+            background: transparent;
+            opacity: 1;
+            .anticon {
+                svg {
+                    fill: rgba(255, 255, 255, 0.45);
+                }
+            }           
+        }
+    }   
+
+// responsive footer drawer search input 
+    .mobile-select-drawer{
+        .ant-drawer-content-wrapper{
+            .ant-drawer-content{
+                overflow-y:auto;
+                border-radius: 0;
+                .ant-drawer-wrapper-body{
+                    .ant-drawer-header{
+                        .ant-drawer-close {
+                            background: url(../assests/images/svg/back-arrow.svg) no-repeat right;
+                            left: -20px;
+                            background-size: 15px;
+                            .anticon {
+                                display: none;
+                                fill: #FFFFFF;
+                                svg {
+                                    fill: #FFFFFF;
+                                }
+                            }
+                        } 
+                    }
+                    .ant-drawer-body{
+                        padding: 0 10px 10px;
+                        .search-autocomplete{
+                            &.flight {
+                                .ant-select-combobox {
+                                    .ant-select-search__field__wrap {
+                                        white-space: nowrap;
+                                        min-width: 100px;                                        
+                                        .ant-input {
+                                            overflow: hidden;
+                                            text-overflow: ellipsis;
+                                            padding-right: 30px;
+                                        }
+                                    }
+                                }                                
+                            }
+                            .ant-input{
+                                border: 0;
+                                border-bottom: 1px solid #fff;
+                                border-radius: 0;
+                                color: #fff;
+                                font-family: $font-lato;
+                                min-width: 100px;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
+                                padding-right: 30px;              
+                                // &::placeholder {
+                                //     color: #404040;
+                                // }
+                                &:focus {                                
+                                    box-shadow: none;
+                                }
+                            }
+                        }
+                        .fake-input{
+                            background: transparent;                            
+                            border: 0;
+                            border-bottom: 1px solid #fff;
+                            width: 100%;
+                            padding: 5.5px 50px  5px 11px;
+                            color: #fff;
+                            position: absolute;
+                            font-family: $font-lato;
+                            color: #ffffff;
+                            min-width: 100px;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                            &::placeholder {
+                                color: #ffffff;
+                            }
+                        }
+                        .fake-input:focus{
+                            border: 0;
+                        }
+                        .city-layout{
+                            margin-top: 30px;                        
+                            .ant-card{                            
+                                border-radius: 10px;
+                                margin-top: 13px;
+                                box-shadow: 0 0 6px rgba(0,0,0,0.16);
+                                font-family: $font-lato;
+                                .ant-card-head{
+                                    .ant-card-head-title{
+                                        color: #0A56BB;
+                                    }
+                                }
+                                .ant-card-body{
+                                    column-count: 3;
+                                    .card-text{
+                                        padding: 8px 5px;
+                                        border: 1px solid #e2e2e2;
+                                        text-align: center;
+                                        border-radius: 3px;
+                                        background: #F8F8F8;
+                                        margin:0 0 8px;
+                                        min-width: 82px;
+                                        white-space: nowrap;
+                                        overflow: hidden;
+                                        text-overflow: ellipsis;
+                                        font-size: 13px;
+                                    }
+                                }
+                            }
+                        }
+                        .city-info {
+                            display: block;
+                            margin: 15px 0;
+                            text-align: center;                            
+                        }
+                        // .select-traveler-search{
+                        //     .traveler-select{
+                        //         .select-adults{
+                        //             display: flex;
+                        //             justify-content: space-around;
+                        //             // height: 42px;                                    
+                        //             align-items: center;
+                        //             border: 0;
+                        //             border-style: dashed;
+                        //             padding: 10px 20px;
+                        //         }
+                        //     }
+                        // }
+                        .ant-menu{
+                            border: 0;
+                            .ant-menu-item{
+                                margin: 0;
+                                height: auto;
+                                line-height: 32px;
+                                font-size: 15px;
+                                font-family: $font-lato;
+                                a {
+                                    &:hover,
+                                    &:active,
+                                    &:focus {
+                                        color: #0A56BB;
+                                    }
+                                }                    
+                            }                            
+                        }
+                    }
+                }
+            }
+        }
+    } 
+}

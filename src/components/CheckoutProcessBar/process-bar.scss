@@ -1,0 +1,48 @@
+@import '../../styles/main.scss';
+
+.progress-bar {
+    background: $primary-color;
+    display: $display-flex;
+    justify-content: $justify-content-center;
+    color: $white-color;
+    font-size: $font-size-15;
+    font-weight: $font-weight;
+    padding: 20px 0;
+    .step-bar {
+        display: $display-flex;
+        align-items: $align-items-center;
+        .step-no {
+            border: 3px solid #1E7DFF;
+            width: 35px;
+            height: 35px;
+            text-align: $text-center;
+            line-height: 27px;
+            border-radius: 50%;
+            margin-right: 7px;
+            &.active {
+                background: #F9A533;
+                border: 3px solid #F9A533;
+            }
+        }
+        .step-name {
+            &.active {
+                color: #F9A533;
+            }
+        }
+        .step-line {
+            background: #1E7DFF;
+            height: 5px;
+            width: 82px;
+            border-radius: 5px;
+            margin: 0 7px;
+        }
+        &.active {
+            .step-no {
+                border: 3px solid #F9A533;
+            }
+            .step-line {
+                background: #F9A533;
+            }
+        }
+    }
+}

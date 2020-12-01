@@ -1,0 +1,57 @@
+.filter-skeleton {
+    .found-card {
+        .found {
+            width: 51%;
+            height: 22px;
+        }
+        .info {
+            width: 100%;
+            height: 58px;
+            margin-top: 10px;
+        }
+    }
+    .skeleton-section {
+        .skeleton-title {
+            display: flex;
+            justify-content: space-between;
+            .title {
+                width: 18%;
+                height: 19px;
+            }
+            .reset-btn {
+                width: 14%;
+                height: 19px;
+            }
+        }
+        hr {
+            margin: 13px 0;
+            background: #D1D1D1;
+            height: 1px;
+            border: none;
+        }
+        .skeleton-item {
+            .item {
+                width: 32%;
+                height: 19px;
+                margin-bottom: 10px;
+            }
+            .price {
+                width: 100%;
+                height: 48px;
+            }
+        }
+    }
+    .background {
+        animation: shine-lines-medium 2s infinite linear;
+        background-image: linear-gradient(90deg, #ececee 0px, #f9f9f9 40px, #ececee 80px);
+        background-size: 600px;
+    }
+    @keyframes shine-lines-medium {
+        0% {
+          background-position: -100px;
+        }
+        40%, 100% {
+         background-position: 265px;
+        }    
+    }
+}

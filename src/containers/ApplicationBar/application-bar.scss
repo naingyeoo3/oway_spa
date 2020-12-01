@@ -1,0 +1,496 @@
+// @import '../App/app.scss';
+@import '../../styles/main.scss';
+@import '../../UI/theme.scss';
+
+.wrapper{
+    //background: url('../../assests/images/header_bg.jpg') repeat-x 0px -60px;
+    background-color: #F9F9F9;
+}
+.top-header{
+    position: relative;
+    height: 45px;        
+    display: flex;
+    align-items: center;
+    ul{        
+        li{
+            float: left;
+        }
+        .topup{
+            img{
+                width:20px;
+                vertical-align: top;
+            }
+            a{
+                background: #4F79B5;
+                padding: 5px;
+                border-radius: 5px;
+                font-family: $font-lato;             
+                &:hover,
+                &:active,
+                &:focus {
+                    background: $secondary-color;
+                    span {
+                        color: $white-color;
+                    }
+                }
+            }
+        }
+    }
+    .header-left{
+        flex: 1;
+        .link-to-app {
+            background: url(../../assests/images/svg/phone.svg) no-repeat left top;
+            background-size: 10px auto;
+            background-color: #4F79B5;
+            padding: 3px 10px 3px 27px;
+            border-radius: 5px;
+            background-position: 10px 4px;
+            &:hover {
+                background-color: $secondary-color;
+                color: $white-color;
+            }
+        }
+    }    
+    .header-right {
+        .dropdown-menu {
+            a {
+                background: url(../../assests/images/svg/dropdown-arrow.svg) no-repeat right center;
+                background-size: 10px auto;
+                padding-right: 15px;
+                &.account-name {
+                    img {
+                        width: 20px;
+                        border-radius: 50%;
+                        margin-right: 5px;
+                    }
+                    span {
+                        max-width: 80px;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        display: inline-block;
+                        vertical-align: middle;
+                        color: $white-color;
+                    }
+                    .ant-avatar {
+                        &.ant-avatar-icon {
+                            width: 22px;
+                            height: 22px;
+                            margin-right: 5px;
+                            .anticon {
+                                font-size: 15px;
+                                vertical-align: super;
+                                padding-top: 3px;
+                            }
+                        }
+                    }
+                }
+            }            
+        }
+    }
+    a {
+        color: $white-color;
+        font-size: 14px;
+        transition: $transition-style-alt;        
+        &:hover,
+        &:active,
+        &:focus {
+            color:$secondary-color;
+            text-shadow: 0px 1px 0px #404040;
+        }  
+    }
+    b {
+        color: #FFFFFF;
+        margin: 0 7px;
+        float: left;
+        font-weight: normal;
+    }  
+}
+.top-header-dropdown {
+    top: 27px !important;
+    a {
+        line-height: 25px;
+        color: #404040;
+        font-size: 15px;
+        &:hover,
+        &:active,
+        &:focus {
+            color:$secondary-color;
+        }
+        img{
+            width:20px;
+            margin:0 5px 5px 5px;   
+        }        
+    }
+    span {
+        img {
+            width: 20px;
+            margin: 0 5px 5px;
+        }
+    }
+    &.top-topup {
+        .ant-popover-content {
+            .ant-popover-inner-content {
+                ul {
+                    li {
+                        a {
+                            font-family: $font-lato;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.language-change{
+    img{
+        width:23px;
+    }
+}
+.menu-header{
+    .menu-header-layout{
+        display: $display-flex;
+        width: $width-100;     
+        .app-logo{
+            flex: $flex-1;            
+            p {
+                color: $white-color;
+                font-size: $font-size-14;
+                margin-top: 2px;
+                font-family: $font-lato;
+            }
+        }
+        .app-menu {
+            ul {            
+                border-radius: 10px 10px 0 0;
+                li {
+                    margin: $margin-0;                
+                    text-align: $text-center;
+                    padding: 0 20px;
+                    &.home {
+                        display: $display-none;
+                    }
+                    img {
+                        width: 40px;
+                        padding: 10px 0;
+                        height: $height-auto;
+                        -webkit-filter: grayscale(100%);
+                        filter: grayscale(100%);
+                    }
+                    h5 {
+                        line-height: $line-height-0;
+                        margin: 0 0 15px 0;
+                        font-size: $font-size-13;
+                        font-weight: $font-weight;
+                        color: $gray-light-color;
+                    }
+                    &.ant-menu-item-selected,
+                    &.ant-menu-item-active {
+                        img {
+                            -webkit-filter: none;
+                            filter: none;
+                        }
+                        h5 {
+                            color: $primary-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
+.app-bar{
+    background: url('../../assests/images/header_bg.jpg') repeat-x 0px -60px;
+    background-color: #F9F9F9;
+}
+// sticky menu bar styles
+.app-bar {
+    .stick-bar {
+        position: fixed;
+        top: $top-0;
+        width: $width-100;
+        z-index: 11;
+        transition: $transition-style-alt;
+        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.16);
+        background: linear-gradient(0deg, #eaeaea,#fff);        
+        .menu-header {
+            display: $display-flex;
+            justify-content: $justify-content-between;
+            .menu-header-layout {
+                width: auto;
+                .app-logo {
+                    display: $display-flex;
+                    align-items: $align-items-center;
+                    flex: none;
+                    img {
+                        width: 100px;                            
+                    }
+                }
+                .app-menu {
+                    ul {
+                        background: inherit;
+                        border-color: transparent;
+                        li {
+                            border-bottom: 2px solid transparent;
+                            &.ant-menu-item-selected,
+                            &.ant-menu-item-active {
+                                border-bottom: 2px solid #1890ff;
+                            }
+                        }
+                    }
+                }
+            }
+            .sticky-user-profile {
+                display: $display-flex;
+                .sticky-topup {
+                    display: $display-flex;
+                    align-items: $align-items-center;
+                    .topup {
+                        background: #efefef;
+                        padding: 5px;
+                        border-radius: $border-radius-5;
+                        margin-right: 10px;
+                        transition: $transition-style-alt;
+                        display: $display-flex;
+                        a {
+                            display: $display-flex;
+                            img {
+                                width: 20px;
+                                height: 20px;
+                            }
+                            span {
+                                color: $gray-light-color;
+                                font-family: $font-lato;
+                                margin-left: 5px;
+                            }
+                        }                                                     
+                        &:hover,
+                        &:active,
+                        &:focus {
+                            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.16);
+                        }
+                    }
+                }
+                .user-profile-dropdown {
+                    display: $display-flex;
+                    .dropdown-menu {
+                        display: $display-flex;
+                        align-items: $align-items-center;
+                        .arrow {
+                            margin-left: 5px;
+                            i {
+                                svg {
+                                    height: 12px;
+                                    fill: #616161;
+                                }
+                            }                                
+                        }
+                        .account-name {
+                            display: $display-flex;
+                            img {
+                                width: 20px;
+                                border-radius: 50%;
+                                margin-right: 5px;
+                            }
+                            span {
+                                max-width: 80px;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
+                                display: $display-inline-block;
+                                vertical-align: middle;
+                            }
+                            .ant-avatar {
+                                &.ant-avatar-icon {
+                                    width: 22px;
+                                    height: 22px;
+                                    margin-right: 5px;
+                                    .anticon {
+                                        font-size: $font-size-15;
+                                        vertical-align: super;
+                                        padding-top: 3px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .ant-avatar {
+                        &.ant-avatar-icon {
+                            background: #efefef;
+                            transition: $transition-style-alt;
+                            svg {
+                                width: 16px;
+                                height: 16px;
+                                fill: #616161;
+                            }
+                        }
+                    }                      
+                    &:hover,
+                    &:active,
+                    &:focus {
+                        cursor: pointer;
+                        .dropdown-menu {
+                            color: $primary-color;
+                            text-shadow: 0px 1px 0px #fff;
+                        }
+                    }
+                }            
+                .ant-dropdown {
+                    padding: 5px 0px;
+                    border-radius: $border-radius-5;
+                    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+                    top: 55px !important;
+                    background: $white-color;
+                    ul {
+                        li {
+                            img {
+                                width: 20px;
+                            }
+                            a {
+                                color: $gray-light-color;
+                                padding: 5px 10px 3px;
+                                display: $display-block;
+                                font-size: $font-size-13;
+                                line-height: 25px;
+                                transition: 0.3s all ease-in;
+                                font-family: $font-lato;
+                                &:hover,
+                                &:active,
+                                &:focus {
+                                    color: $primary-color;
+                                    background: #e6f7ff;
+                                }
+                            }
+                            span {
+                                color: $gray-light-color;
+                                padding: 2px 10px;
+                                display: $display-block;
+                                font-size: $font-size-13;
+                                line-height: 25px;
+                                transition: 0.3s all ease-in;
+                                span {
+                                    display: $display-inline-block;
+                                }
+                                &:hover,
+                                &:active,
+                                &:focus {
+                                    color: $primary-color;
+                                    background: #e6f7ff;
+                                }
+                            } 
+                        }
+                        &.account-profile {
+                            li {
+                                .ant-avatar {
+                                    &.ant-avatar-icon {
+                                        background: transparent;
+                                        width: 20px;
+                                        padding: $padding-0;
+                                        font-size: 18px;
+                                        display: initial;
+                                        i {
+                                            color: $dark-color;
+                                            vertical-align: baseline;
+                                        }
+                                    }
+                                }
+                            }                                
+                        }
+                    }
+                }
+            }
+        }        
+    }
+}
+.ant-modal {
+    &.advertising {
+        .ant-modal-content {
+            border-radius: 10px;
+            background: transparent;
+            box-shadow: none;
+            .ant-modal-close {
+                top: -15px;
+                right: -14px;
+                background: #000000b3;
+                color: #FFF;
+                border-radius: 50%;
+                &:hover {
+                    background: rgba(0, 0, 0, 0.8);
+                }
+                .ant-modal-close-x {
+                    width: 35px;
+                    height: 35px;
+                    font-size: 20px;
+                    line-height: 37px;
+                }
+            }
+            .ant-modal-body {
+                padding: 0;
+                img {
+                    cursor: $cursor-pointer;
+                    border-radius: 10px;
+                }            
+            }
+        }        
+    }
+}
+
+@media screen and (max-width:991px){
+    .app-bar{
+        .app-container{
+            padding-left:0;
+            padding-right:0;
+            .menu-header{                
+                .menu-header-layout{
+                    .app-logo{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:992px) and (max-width:1099px) {
+    .top-header {
+        a {
+            font-size: 13px;
+        }
+        b{
+            padding:0 4px;
+            margin:0;
+        }
+    }
+    .menu-header {
+        .menu-header-layout {
+            .app-menu {
+                ul {
+                    li{
+                        padding:0 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .app-bar {
+        .stick-bar {
+            &.scroll-menu {
+                &::after {
+                    background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(0, 0, 0, 0.15) 100%);            
+                    content: " ";
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    height: 85px;
+                    border-radius: 0 0 10px 0;
+                    width: 25px;
+                    z-index: 11;
+                }
+            }
+        }
+    }    
+}

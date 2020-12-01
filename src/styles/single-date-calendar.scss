@@ -1,0 +1,41 @@
+.SingleDatePicker{
+    .SingleDatePickerInput{
+        border: 0;
+        background: transparent;
+        .DateInput{
+            background: transparent;
+            width: auto;
+            // border-right: 1px solid #DCDCDC;
+            // box-shadow: 1px 0 0 rgba(255, 255, 255, 0.84);
+            .DateInput_fang{
+                display: none;
+            }
+            .DateInput_input{
+                background: transparent;
+                padding: 0 10px;
+                font-size: 16px;
+                padding-top: 23px;
+                border-bottom: 2px solid transparent;
+                font-family: 'Lato', sans-serif;
+            }
+            .DateInput_input__focused{
+                border-bottom: 2px solid #0a56bb;
+            }
+        }
+        .DayPickerNavigation__horizontal {
+            display: flex;
+            justify-content: space-between;
+            font-size: 20px;
+            .DayPickerNavigation_button {
+              padding: 10px;
+            }
+        }
+        .DayPickerKeyboardShortcuts_show__bottomRight {
+            display: none;
+        }
+    }
+}
+.SingleDatePicker_picker {
+    top: 64px !important;
+}
+  
